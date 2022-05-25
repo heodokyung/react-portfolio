@@ -43,6 +43,7 @@ const TypingEffect = styled.article`
   margin-top: 20px;
   font-size: 18px;
   line-height: 22px;
+  color: #fff;
 `;
 
 const VisualGuide = styled.div`

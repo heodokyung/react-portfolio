@@ -6,17 +6,17 @@ export function fetchLotteSkill() {
 }
 
 export function fetchLotteWork() {
-  return async () => {
+  return (async () => {
     await fetch(
       'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json'
     ).then((response) => response.json());
-  };
+  })();
 }
 
 export function fetchLotteAbout() {
-  return async () => {
-    await fetch(
-      'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json'
-    ).then((response) => response.json());
-  };
+  return (async () => {
+    await fetch( fetch(
+    'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json'
+  ).then((response) => response.json());
+  })();
 }
