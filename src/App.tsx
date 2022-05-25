@@ -9,6 +9,8 @@ import { useScroll } from './components/common/useScroll';
 import Home from './routes/Home';
 import Details from './routes/Details';
 import Footer from './components/common/Footer';
+import PageScrollTop from './components/common/PageScrollTop';
+import { useEffect } from 'react';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -69,6 +71,13 @@ const Container = styled.div`
 `;
 
 function App() {
+  useEffect(() => {
+    console.log(
+      '%c입사지원한 허도경입니다. \n잘 부탁드립니다.',
+      'color:#222; font-size:23px; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;'
+    );
+  }, []);
+
   const isDarkMode = useRecoilValue(isDarkAtom);
   const { scrollY } = useScroll();
   return (
@@ -76,6 +85,7 @@ function App() {
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyle />
         <BrowserRouter>
+          <PageScrollTop />
           <Header />
           <Container className={scrollY > 0 ? 'is-active' : ''}>
             <Routes>

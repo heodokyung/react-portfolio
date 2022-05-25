@@ -10,7 +10,7 @@ const WebPortfolioV2 = () => {
           <strong>기간</strong>: 2022.04.25 ~ 2022.05.06
         </li>
         <li>
-          <strong>이전과 달라진 점</strong>:
+          <strong>사이트 적용내용</strong>:
           <ul className={pageStyle.subList}>
             <li>
               <a
@@ -21,6 +21,16 @@ const WebPortfolioV2 = () => {
                 React
               </a>
               로 포트폴리오 사이트 전체 구현
+            </li>
+            <li>
+              <a
+                href="https://styled-components.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                styled-components(CSS-IN-JS)
+              </a>
+              를 적용하여 스타일 적용
             </li>
             <li>
               <a

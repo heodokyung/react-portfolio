@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
 import MainDetailList from './MainDetailList';
+import { useQuery } from 'react-query';
+import { fetchLotteWork } from '../../routes/api';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -31,7 +33,7 @@ const DetailList = styled.article`
 `;
 
 interface IWorkList {
-  details: {
+  data: {
     names: string;
     date: string;
     department: string;
@@ -52,11 +54,8 @@ const MainWorkList = () => {
   /****************************************
   * WorK List 및 Lotte 데이터 받아오기
   * Json: WorK List
-  * json2: Lotte
   /***************************************/
   const [workList, setWorkList] = useState<IWorkList[]>([]);
-  const [lotteData, setLotteData] = useState();
-
   useEffect(() => {
     // 즉시 실행하기 : 단 한번만 호출
     (async () => {
@@ -66,13 +65,20 @@ const MainWorkList = () => {
       );
       const json = await response.json();
       setWorkList(json.data.work);
+    })();
+  }, []);
 
-      // Lotte JSON
-      const response2 = await fetch(
+  /****************************************
+  * Lotte Animation 데이터 받아오기
+  /***************************************/
+  const [lotteData, setLotteData] = useState<any>();
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(
         'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json'
       );
-      const json2 = await response2.json();
-      setLotteData(json2);
+      const json = await response.json();
+      setLotteData(json);
     })();
   }, []);
 
@@ -89,7 +95,7 @@ const MainWorkList = () => {
         ref={targetRef}
         className={`${wasEverVisible && 'is-active'}`}
       >
-        {workList.map((workEl, index: number) => (
+        {workList?.map((workEl, index: number) => (
           <MainDetailList key={index} details={workEl} />
         ))}
       </DetailList>

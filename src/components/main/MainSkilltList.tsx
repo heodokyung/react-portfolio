@@ -4,6 +4,8 @@ import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
+import { fetchLotteSkill } from '../../routes/api';
+import { useQuery } from 'react-query';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -160,18 +162,10 @@ interface ISkillList {
 }
 
 const MainSkillList = () => {
-  const [skillList, setSkillList] = useState<ISkillList[]>([]);
-  const [lotteData, setLotteData] = useState();
-
   /****************************************
-  * IntersectionObserver 정의
-  * 옵션 정의
-  * MainProjectList 참조
+  * Skill Data 가져오기
   /***************************************/
-
-  const [targetRef, { wasEverVisible }] = useTrackVisibility();
-  useEffect(() => {}, [wasEverVisible]);
-
+  const [skillList, setSkillList] = useState<ISkillList[]>([]);
   useEffect(() => {
     // 즉시 실행하기 : 단 한번만 호출
     (async () => {
@@ -189,15 +183,31 @@ const MainSkillList = () => {
           }
         )
       );
-
-      // Lotte JSON
-      const response2 = await fetch(
-        'https://assets5.lottiefiles.com/private_files/lf30_WdTEui.json'
-      );
-      const json2 = await response2.json();
-      setLotteData(json2);
     })();
   }, []);
+
+  /****************************************
+  * Lotte Animation 데이터 받아오기
+  /***************************************/
+  const [lotteData, setLotteData] = useState<any>();
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(
+        'https://assets5.lottiefiles.com/private_files/lf30_WdTEui.json'
+      );
+      const json = await response.json();
+      setLotteData(json);
+    })();
+  }, []);
+
+  /****************************************
+  * IntersectionObserver 정의
+  * 옵션 정의
+  * MainProjectList 참조
+  /***************************************/
+
+  const [targetRef, { wasEverVisible }] = useTrackVisibility();
+  useEffect(() => {}, [wasEverVisible]);
 
   /****************************************
    *  List 이벤트 공통 (Mouse, Focus)
@@ -226,7 +236,6 @@ const MainSkillList = () => {
   /****************************************
    *  List 이벤트 : click
    ****************************************/
-
   const listDetailView = (index: number) => {
     // console.log(event.target);
     setSkillList(

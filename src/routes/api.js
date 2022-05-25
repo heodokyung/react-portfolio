@@ -1,27 +1,22 @@
-// PROJECT
-export function fetchProjectList() {
+// LOTTE DATA
+export function fetchLotteSkill() {
   return fetch(
-    `https://heodokyung.github.io/portfolio-data-json/portfolio_data.json`
+    'https://assets5.lottiefiles.com/private_files/lf30_WdTEui.json'
   ).then((response) => response.json());
 }
 
-// SKILL
-export function fetchSkillList() {
-  return fetch(
-    `https://heodokyung.github.io/portfolio-data-json/portfolio_skill.json`
-  ).then((response) => response.json());
+export function fetchLotteWork() {
+  return async () => {
+    await fetch(
+      'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json'
+    ).then((response) => response.json());
+  };
 }
 
-// WORK
-export function fetchWorkList() {
-  return fetch(
-    `https://heodokyung.github.io/portfolio-data-json/portfolio_work.json`
-  ).then((response) => response.json());
-}
-
-// ABOUT
-export function fetchAboutList() {
-  return fetch(
-    `https://heodokyung.github.io/portfolio-data-json/portfolio_about.json`
-  ).then((response) => response.json());
+export function fetchLotteAbout() {
+  return async () => {
+    await fetch(
+      'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json'
+    ).then((response) => response.json());
+  };
 }

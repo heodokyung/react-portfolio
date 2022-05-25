@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
 import MainDetailList from './MainDetailList';
+import { fetchLotteAbout } from '../../routes/api';
+import { useQuery } from 'react-query';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -47,12 +49,10 @@ const MainAboutList = () => {
   useEffect(() => {}, [wasEverVisible]);
 
   /****************************************
-  * WorK List 및 Lotte 데이터 받아오기
+  * About List 데이터 받아오기
   * Json: WorK List
-  * json2: Lotte
   /***************************************/
   const [aboutList, setAboutList] = useState<IAboutList[]>([]);
-  const [lotteData, setLotteData] = useState();
 
   useEffect(() => {
     // 즉시 실행하기 : 단 한번만 호출
@@ -63,13 +63,20 @@ const MainAboutList = () => {
       );
       const json = await response.json();
       setAboutList(json.data.about);
+    })();
+  }, []);
 
-      // Lotte JSON
-      const response2 = await fetch(
+  /****************************************
+  * Lotte Animation 데이터 받아오기
+  /***************************************/
+  const [lotteData, setLotteData] = useState<any>();
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(
         'https://assets4.lottiefiles.com/private_files/lf30_kj1b8w1w.json'
       );
-      const json2 = await response2.json();
-      setLotteData(json2);
+      const json = await response.json();
+      setLotteData(json);
     })();
   }, []);
 

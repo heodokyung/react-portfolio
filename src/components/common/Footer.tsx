@@ -24,7 +24,23 @@ const FooterWrap = styled.article`
     padding: 0 24px;
     height: 100%;
     address {
-      margin-top: 12px;
+      margin-top: 15px;
+      a:first-of-type {
+        position: relative;
+        margin-right: 10px;
+        padding-right: 10px;
+      }
+      a:first-of-type:after {
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 50%;
+        margin-top: -4px;
+        width: 1px;
+        height: 12px;
+        content: '';
+        background-color: ${(props) => props.theme.textColor};
+      }
     }
   }
 `;
@@ -36,11 +52,12 @@ const BtnScrollTop = styled.button`
   height: 63px;
   background-size: cover;
   right: 15px;
-  bottom: 30px;
+  bottom: 50px;
   border-radius: 8px;
   z-index: 10;
-  background-position: 50% 50%;
-  background-size: cover;
+  background: url(${require('../../images/common/btn_scroll.png')}) no-repeat
+    50% 50%;
+  background-size: contain;
   &.is-active {
     display: block;
     animation: ${fadeInAni} 0.65s forwards ease-in-out;
@@ -65,18 +82,20 @@ const Footer = () => {
   return (
     <FooterWrap>
       <footer>
-        <article className="copyright">
-          Copyright © HEO.D.K All rights reserved.
-        </article>
+        <article>Copyright © HEO.D.K All rights reserved.</article>
         <address>
           <a href="mailto:limewhale@daum.net">limewhale@daum.net</a>
+          <a
+            href="https://github.com/heodokyung/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
         </address>
       </footer>
       <BtnScrollTop
         type="button"
-        style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/common/btn_scroll.png)`,
-        }}
         className={scrollY > 0 ? 'is-active' : ''}
         onClick={handleTop}
       >

@@ -1,29 +1,22 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Pagination } from 'swiper';
+import { EffectFade, Navigation, Pagination } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import styled from 'styled-components';
 
 const SwiperWrap = styled.article`
+  position: relative;
   margin-top: 50px;
-  .guideTxt {
-    position: relative;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 16px;
-  }
   img {
     width: 100%;
   }
-
-  .swiper-pagination {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid ${(props) => props.theme.textColor};
-    .swiper-pagination-current {
-      font-weight: bold;
-    }
-  }
+`;
+const GuideTxt = styled.p`
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 16px;
 `;
 
 interface IImgData {
@@ -34,15 +27,16 @@ interface IImgData {
 const ReactSwiper = ({ imgData }: { imgData: any }) => {
   return (
     <SwiperWrap>
-      <p className="guideTxt">※ 좌,우로 스와이프하여 확인하실 수 있어요!</p>
+      <GuideTxt>※ 좌,우로 스와이프하여 확인하실 수 있어요!</GuideTxt>
       <Swiper
         loop={true}
+        pagination={{
+          type: 'progressbar',
+        }}
+        navigation={true}
         autoHeight={true}
         effect={'fade'}
-        pagination={{
-          type: 'fraction',
-        }}
-        modules={[EffectFade, Pagination]}
+        modules={[EffectFade, Navigation, Pagination]}
       >
         {imgData.map((item: IImgData, idx: number) => (
           <SwiperSlide key={idx}>

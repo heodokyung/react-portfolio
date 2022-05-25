@@ -209,7 +209,6 @@ interface IProJect {
   eventShow?: boolean;
   eventActive?: boolean;
 }
-
 const MainProjectList = () => {
   /****************************************
    *  프로젝트 List => JSOM 데이터 받아오기
@@ -294,6 +293,7 @@ const MainProjectList = () => {
     siblings(currentTarget, 'is-active');
     currentTarget.classList.add('is-active');
     setProjectList(
+      // projectList.filter((item) => item.gubun.includes(_type))
       projectList.map((item) => {
         if (_type === 'all') {
           item.eventShow = true;

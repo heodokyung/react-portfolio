@@ -9,6 +9,7 @@ const PcContent = styled.article`
 `;
 
 const SnbMenu = styled.nav`
+  position: fixed;
   border-top: 1px solid ${(props) => props.theme.subListColor};
   width: 240px;
   z-index: 10;
