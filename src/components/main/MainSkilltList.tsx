@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
-import { fetchLotteSkill } from '../../routes/api';
-import { useQuery } from 'react-query';
 
 /****************************************
 * CSS-in-js 정의 부분

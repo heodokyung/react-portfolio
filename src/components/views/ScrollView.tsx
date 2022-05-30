@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const ProjectSummary = styled.article`
@@ -29,7 +28,6 @@ const ScrollElement = styled.li`
     margin-left: 10px;
   }
 `;
-
 interface IimgData {
   alt: string | undefined;
   src: string | undefined;
