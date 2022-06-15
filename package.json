@@ -12,8 +12,9 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "@types/react-responsive": "^8.0.5",
+    "axios": "^0.27.2",
     "emotion-reset": "^3.0.1",
-    "gh-pages": "^4.0.0",
+    "framer-motion": "^6.3.11",
     "gsap": "^3.10.4",
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
@@ -63,7 +64,8 @@
   },
   "devDependencies": {
     "@types/react-typing-effect": "^2.0.3",
-    "@types/styled-components": "^5.1.25"
+    "@types/styled-components": "^5.1.25",
+    "gh-pages": "^4.0.0"
   },
   "homepage": "https://heodokyung.github.io/react-portfolio"
 }

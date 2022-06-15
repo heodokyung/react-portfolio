@@ -4,6 +4,8 @@ import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
+import CommonApi from '../../api/CommonApi';
+import { motion, AnimatePresence } from 'framer-motion';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -51,7 +53,7 @@ const SkillList = styled.ul`
   }
 `;
 
-const SkillListEl = styled.li`
+const SkillListEl = styled(motion.li)`
   display: inline-block;
   position: relative;
   height: 210px;
@@ -62,6 +64,7 @@ const SkillListEl = styled.li`
   transition: 0.6s;
   transform-style: preserve-3d;
   background-color: ${(props) => props.theme.subListColor};
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 
   .front,
   .back {
@@ -165,23 +168,22 @@ const MainSkillList = () => {
   /***************************************/
   const [skillList, setSkillList] = useState<ISkillList[]>([]);
   useEffect(() => {
-    // 즉시 실행하기 : 단 한번만 호출
-    (async () => {
-      // Skill List
-      const response = await fetch(
-        'https://heodokyung.github.io/portfolio-data-json/portfolio_skill.json'
-      );
-      const json = await response.json();
-      setSkillList(
-        json.data.skill.map(
-          (item: { eventMask: boolean; eventDetail: boolean }) => {
-            item.eventMask = false;
-            item.eventDetail = false;
-            return item;
-          }
-        )
-      );
-    })();
+    CommonApi.get('/portfolio_skill.json')
+      .then((response) => {
+        const skillData = response.data.data;
+        setSkillList(
+          skillData.skill.map(
+            (item: { eventMask: boolean; eventDetail: boolean }) => {
+              item.eventMask = false;
+              item.eventDetail = false;
+              return item;
+            }
+          )
+        );
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   /****************************************

@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
 import MainDetailList from './MainDetailList';
+import CommonApi from '../../api/CommonApi';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -55,15 +56,13 @@ const MainWorkList = () => {
   /***************************************/
   const [workList, setWorkList] = useState<IWorkList[]>([]);
   useEffect(() => {
-    // 즉시 실행하기 : 단 한번만 호출
-    (async () => {
-      // Work List
-      const response = await fetch(
-        'https://heodokyung.github.io/portfolio-data-json/portfolio_work.json'
-      );
-      const json = await response.json();
-      setWorkList(json.data.work);
-    })();
+    CommonApi.get('/portfolio_work.json')
+      .then((response) => {
+        setWorkList(response.data.data.work);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   /****************************************

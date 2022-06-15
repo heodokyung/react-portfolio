@@ -4,6 +4,7 @@ import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
+import CommonApi from './../../api/CommonApi';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -217,25 +218,24 @@ const MainProjectList = () => {
   const [projectList, setProjectList] = useState<IProJect[]>([]);
 
   useEffect(() => {
-    // 즉시 실행하기 : 단 한번만 호출
-    (async () => {
-      const response = await fetch(
-        'https://heodokyung.github.io/portfolio-data-json/portfolio_project.json'
-      );
-      const json = await response.json();
-
-      // 이벤트 체크하는 함수 넣기(mouse, focus)
-      setProjectList(
-        json.data.portfolio.map(
-          (item: { eventActive: boolean; eventShow: boolean }) => {
-            item.eventActive = false;
-            item.eventShow = true;
-            return item;
-          }
-        )
-      );
-      setLoading(false);
-    })();
+    CommonApi.get('/portfolio_project.json')
+      .then((response) => {
+        const project = response.data.data;
+        // console.log('projectData', json);
+        setProjectList(
+          project.portfolio.map(
+            (item: { eventActive: boolean; eventShow: boolean }) => {
+              item.eventActive = false;
+              item.eventShow = true;
+              return item;
+            }
+          )
+        );
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   /****************************************
@@ -284,7 +284,15 @@ const MainProjectList = () => {
   /****************************************
    *  List 이벤트 : Sorting
    *****************************************/
-  const sorting = (
+
+  enum SortCategoryType {
+    'ALL' = 'all',
+    'WEB' = 'w',
+    'MOBILE' = 'm',
+    'RESPONSIVE' = 'r',
+  }
+
+  const sortingList = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
     _type: string
   ) => {
@@ -325,7 +333,7 @@ const MainProjectList = () => {
         <SortingButton
           type="button"
           onClick={(event) => {
-            sorting(event, 'all');
+            sortingList(event, SortCategoryType.ALL);
           }}
           className="is-active"
         >
@@ -334,7 +342,7 @@ const MainProjectList = () => {
         <SortingButton
           type="button"
           onClick={(event) => {
-            sorting(event, 'w');
+            sortingList(event, SortCategoryType.WEB);
           }}
         >
           Web
@@ -342,7 +350,7 @@ const MainProjectList = () => {
         <SortingButton
           type="button"
           onClick={(event) => {
-            sorting(event, 'm');
+            sortingList(event, SortCategoryType.MOBILE);
           }}
         >
           Mobile
@@ -350,7 +358,7 @@ const MainProjectList = () => {
         <SortingButton
           type="button"
           onClick={(event) => {
-            sorting(event, 'r');
+            sortingList(event, SortCategoryType.RESPONSIVE);
           }}
         >
           Responsive
