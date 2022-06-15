@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.00f060b5.css",
-    "main.js": "/react-portfolio/static/js/main.94a2415d.js",
+    "main.js": "/react-portfolio/static/js/main.8e5723a1.js",
     "static/media/finnq_w_v2_2.jpg": "/react-portfolio/static/media/finnq_w_v2_2.d2ca60e0b77defb7227f.jpg",
     "static/media/img_kebhana_open_4.jpg": "/react-portfolio/static/media/img_kebhana_open_4.3a9c1cd57c2422f9ec2c.jpg",
     "static/media/img_w_han1.jpg": "/react-portfolio/static/media/img_w_han1.a09e2766ddbb2bc32dc7.jpg",
@@ -111,10 +111,10 @@
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
     "index.html": "/react-portfolio/index.html",
     "main.00f060b5.css.map": "/react-portfolio/static/css/main.00f060b5.css.map",
-    "main.94a2415d.js.map": "/react-portfolio/static/js/main.94a2415d.js.map"
+    "main.8e5723a1.js.map": "/react-portfolio/static/js/main.8e5723a1.js.map"
   },
   "entrypoints": [
     "static/css/main.00f060b5.css",
-    "static/js/main.94a2415d.js"
+    "static/js/main.8e5723a1.js"
   ]
 }
