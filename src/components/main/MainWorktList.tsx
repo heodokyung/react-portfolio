@@ -2,10 +2,10 @@ import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
-import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
-import MainDetailList from './MainDetailList';
+import MainDetailList from './hooks/MainDetailList';
 import CommonApi from '../../api/CommonApi';
+import LottiePlayer from './hooks/LottiePlayer';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -58,7 +58,7 @@ const MainWorkList = () => {
   useEffect(() => {
     CommonApi.get('/portfolio_work.json')
       .then((response) => {
-        setWorkList(response.data.data.work);
+        setWorkList(response.data.work);
       })
       .catch((error) => {
         console.log(error);
@@ -82,12 +82,7 @@ const MainWorkList = () => {
   return (
     <CommonListWrap>
       <CommonTitle title={'WORK'} view={'main'} />
-      <Lottie
-        loop
-        animationData={lotteData}
-        play
-        style={{ width: '100%', height: 300, background: 'transparent' }}
-      />
+      <LottiePlayer lotteData={lotteData} />
       <DetailList
         ref={targetRef}
         className={`${wasEverVisible && 'is-active'}`}

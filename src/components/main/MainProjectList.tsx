@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
@@ -220,7 +220,7 @@ const MainProjectList = () => {
   useEffect(() => {
     CommonApi.get('/portfolio_project.json')
       .then((response) => {
-        const project = response.data.data;
+        const project = response.data;
         // console.log('projectData', json);
         setProjectList(
           project.portfolio.map(
@@ -292,42 +292,42 @@ const MainProjectList = () => {
     'RESPONSIVE' = 'r',
   }
 
-  const sortingList = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-    _type: string
-  ) => {
-    const { currentTarget } = event;
+  const sortingList = useCallback(
+    (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _type: string) => {
+      const { currentTarget } = event;
 
-    siblings(currentTarget, 'is-active');
-    currentTarget.classList.add('is-active');
-    setProjectList(
-      // projectList.filter((item) => item.gubun.includes(_type))
-      projectList.map((item) => {
-        if (_type === 'all') {
-          item.eventShow = true;
-        } else {
-          if (item.gubun.includes(_type)) {
+      siblings(currentTarget, 'is-active');
+      currentTarget.classList.add('is-active');
+      setProjectList(
+        // projectList.filter((item) => item.gubun.includes(_type))
+        projectList.map((item) => {
+          if (_type === 'all') {
             item.eventShow = true;
           } else {
-            item.eventShow = false;
+            if (item.gubun.includes(_type)) {
+              item.eventShow = true;
+            } else {
+              item.eventShow = false;
+            }
           }
-        }
-        return item;
-      })
-    );
+          return item;
+        })
+      );
 
-    function siblings(t: any, _class: string) {
-      const children = t.parentElement.children;
-      for (var i = 0; i < children.length; i++) {
-        children[i].classList.remove(_class);
+      // HTMLElement | null
+      function siblings(t: any, _class: string) {
+        const children = t.parentElement.children;
+        for (var i = 0; i < children.length; i++) {
+          children[i].classList.remove(_class);
+        }
       }
-    }
-  };
+    },
+    [SortCategoryType]
+  );
 
   return (
     <ProjectListWrap>
       <CommonTitle title={'PROJECT'} view={'main'} />
-
       <SortingWrap>
         Sort:
         <SortingButton
@@ -366,7 +366,7 @@ const MainProjectList = () => {
       </SortingWrap>
 
       {loading ? (
-        'Loading...'
+        <p>Loading...</p>
       ) : (
         <ProjectList
           ref={targetRef}

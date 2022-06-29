@@ -74,7 +74,7 @@ function App() {
   useEffect(() => {
     console.log(
       '%c입사지원한 허도경입니다. \n잘 부탁드립니다.',
-      'color:#222; font-size:23px; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;'
+      'color:#222; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;'
     );
   }, []);
 

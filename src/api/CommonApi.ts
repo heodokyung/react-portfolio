@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const CommonApi = axios.create({
+export const CommonApi = axios.create({
   baseURL: 'https://heodokyung.github.io/portfolio-data-json',
 });
 

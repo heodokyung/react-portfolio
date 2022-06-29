@@ -2,10 +2,9 @@ import { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import CommonTitle from '../common/CommonTitle';
 import { useEffect } from 'react';
-import Lottie from 'react-lottie-player';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
 import CommonApi from '../../api/CommonApi';
-import { motion, AnimatePresence } from 'framer-motion';
+import LottiePlayer from './hooks/LottiePlayer';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -53,7 +52,7 @@ const SkillList = styled.ul`
   }
 `;
 
-const SkillListEl = styled(motion.li)`
+const SkillListEl = styled.li`
   display: inline-block;
   position: relative;
   height: 210px;
@@ -170,7 +169,7 @@ const MainSkillList = () => {
   useEffect(() => {
     CommonApi.get('/portfolio_skill.json')
       .then((response) => {
-        const skillData = response.data.data;
+        const skillData = response.data;
         setSkillList(
           skillData.skill.map(
             (item: { eventMask: boolean; eventDetail: boolean }) => {
@@ -253,12 +252,7 @@ const MainSkillList = () => {
   return (
     <SkillListWrap>
       <CommonTitle title={'SKILL'} view={'main'} />
-      <Lottie
-        loop
-        animationData={lotteData}
-        play
-        style={{ width: '100%', height: 300, background: 'transparent' }}
-      />
+      <LottiePlayer lotteData={lotteData} />
       <SkillList ref={targetRef} className={`${wasEverVisible && 'is-active'}`}>
         {skillList.map((skillEl, index) => (
           <SkillListEl
