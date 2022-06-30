@@ -1,10 +1,11 @@
 import React, { useCallback, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import CommonTitle from '../components/common/CommonTitle';
-import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
 import CommonApi from '../api/CommonApi';
+import CommonTitle from '../components/common/CommonTitle';
+import SortingOpt from '../components/main/SortingOpt';
+import ProjectListElement from '../components/main/ProjectListElement';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -15,15 +16,6 @@ const fadeInAni = keyframes`
   }
   to {
     opacity: 1;
-  }
-`;
-
-const moreViewAni = keyframes`
-  from {
-    bottom: -300px;
-  }
-  to {
-    bottom: 50px;
   }
 `;
 
@@ -55,143 +47,6 @@ const ProjectList = styled.ul`
 	&.is-active {
 		animation: ${fadeInAni} 0.65s forwards ease-in-out;
 		animation-delay: 0.4s;
-	}
-`;
-
-const ProjectListEl = styled.li`
-	position: relative;
-	overflow: hidden;
-	border-radius: 4px;
-	a {
-		display: block;
-	}
-	&.is-active:hover img,
-	&.is-active:focus img {
-		transform: scale(1.1);
-		transition: transform 0.7s;
-	}
-	&.is-active .more {
-		animation: ${moreViewAni} 0.35s forwards ease-in-out;
-	}
-	&.is-active .mask {
-		display: block;
-	}
-
-	&.none {
-		display: none;
-	}
-
-	&[data-view='true'] {
-		display: block;
-		animation: ${fadeInAni} 0.65s forwards ease-in-out;
-	}
-
-	&[data-view='false'] {
-		display: none;
-	}
-	.mask {
-		display: none;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.4);
-		color: #fff;
-		.title {
-			margin-top: 60px;
-			font-size: 16px;
-			line-height: 20px;
-			text-align: center;
-		}
-		.date {
-			display: block;
-			font-size: 16px;
-			margin-top: 10px;
-			letter-spacing: 0;
-		}
-		.more {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			position: absolute;
-			left: 50%;
-			width: 108px;
-			margin-left: -54px;
-			bottom: -300%;
-			font-size: 16px;
-			font-weight: bold;
-			padding: 10px 0;
-			border-top: 2px solid #fff;
-			border-bottom: 2px solid #fff;
-			color: #fff;
-			text-align: center;
-			padding-left: 8px;
-			&:after {
-				display: inline-block;
-				position: relative;
-				top: -2px;
-				right: -3px;
-				content: '+';
-			}
-			@media screen and (max-width: 650px) {
-				display: none;
-			}
-		}
-	}
-`;
-
-const ProjectIcoWrap = styled.div`
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	z-index: 5;
-`;
-
-const LabelIco = styled.span`
-	display: inline-block;
-	padding: 4px 6px;
-	font-size: 12px;
-	font-family: Arial;
-	vertical-align: top;
-	border-radius: 8px;
-	background: rgba(2, 2, 2, 0.6);
-	color: #fff;
-	& + & {
-		margin-left: 5px;
-	}
-	&.new {
-		color: ${(props) => props.theme.accentColor};
-	}
-`;
-const ProjectImg = styled.img`
-	width: 100%;
-`;
-
-const SortingWrap = styled.article`
-	padding: 12px 24px;
-	font-size: 16px;
-	color: ${(props) => props.theme.textColor};
-	background-color: ${(props) => props.theme.subListColor};
-	margin-bottom: 10px;
-	display: flex;
-	align-items: center;
-	border-radius: 8px;
-	overflow-x: auto;
-	white-space: nowrap;
-`;
-
-const SortingButton = styled.button`
-	padding: 10px 24px;
-	border: 1px solid ${(props) => props.theme.textColor};
-	border-radius: 4px;
-	margin-left: 10px;
-	font-weight: bold;
-	color: inherit;
-	&.is-active {
-		background-color: ${(props) => props.theme.textColor};
-		color: ${(props) => props.theme.bgColor};
-		border-color: ${(props) => props.theme.bgColor};
 	}
 `;
 
@@ -284,7 +139,6 @@ const MainProjectList = () => {
 	/****************************************
 	 *  List 이벤트 : Sorting
 	 *****************************************/
-
 	enum SortCategoryType {
 		'ALL' = 'all',
 		'WEB' = 'w',
@@ -325,42 +179,10 @@ const MainProjectList = () => {
 	return (
 		<ProjectListWrap>
 			<CommonTitle title={'PROJECT'} view={'main'} />
-			<SortingWrap>
-				Sort:
-				<SortingButton
-					type='button'
-					onClick={(event) => {
-						sortingList(event, SortCategoryType.ALL);
-					}}
-					className='is-active'
-				>
-					ALL
-				</SortingButton>
-				<SortingButton
-					type='button'
-					onClick={(event) => {
-						sortingList(event, SortCategoryType.WEB);
-					}}
-				>
-					Web
-				</SortingButton>
-				<SortingButton
-					type='button'
-					onClick={(event) => {
-						sortingList(event, SortCategoryType.MOBILE);
-					}}
-				>
-					Mobile
-				</SortingButton>
-				<SortingButton
-					type='button'
-					onClick={(event) => {
-						sortingList(event, SortCategoryType.RESPONSIVE);
-					}}
-				>
-					Responsive
-				</SortingButton>
-			</SortingWrap>
+			<SortingOpt
+				sortingList={sortingList}
+				SortCategoryType={SortCategoryType}
+			/>
 
 			{loading ? (
 				<p>Loading...</p>
@@ -369,58 +191,14 @@ const MainProjectList = () => {
 					ref={targetRef}
 					className={`${wasEverVisible && 'is-active'}`}
 				>
-					{projectList.map((projectEl, index) => (
-						<ProjectListEl
+					{projectList.map((projectEl, index: number) => (
+						<ProjectListElement
 							key={index}
-							className={
-								projectEl.eventActive === true
-									? `${projectEl.gubun} is-active`
-									: `${projectEl.gubun}`
-							}
-							onMouseEnter={() => {
-								listEventIn(index);
-							}}
-							onMouseLeave={() => {
-								listEventLeave();
-							}}
-							onFocus={() => {
-								listEventIn(index);
-							}}
-							onBlur={() => {
-								listEventLeave();
-							}}
-							data-view={projectEl.eventShow === true ? 'true' : 'false'}
-						>
-							<Link
-								to={`${process.env.PUBLIC_URL}/details/`}
-								state={{
-									viewId: projectEl.id,
-									helmeTitle: projectEl.title,
-									persent: projectEl.persent,
-								}}
-							>
-								<ProjectIcoWrap>
-									{projectEl.new ? (
-										<LabelIco className='new'>NEW</LabelIco>
-									) : null}
-									<LabelIco>{projectEl.leng}</LabelIco>
-									<LabelIco>{projectEl.type}</LabelIco>
-								</ProjectIcoWrap>
-								<ProjectImg
-									src={projectEl.imgSrc}
-									alt={`${projectEl.type} 썸네일`}
-								/>
-								<div className='mask'>
-									<p className='title'>
-										<em
-											dangerouslySetInnerHTML={{ __html: `${projectEl.title}` }}
-										/>
-										<span className='date'>{projectEl.date}</span>
-									</p>
-									<span className='more'>자세히보기</span>
-								</div>
-							</Link>
-						</ProjectListEl>
+							index={index}
+							projectEl={projectEl}
+							listEventIn={listEventIn}
+							listEventLeave={listEventLeave}
+						/>
 					))}
 				</ProjectList>
 			)}

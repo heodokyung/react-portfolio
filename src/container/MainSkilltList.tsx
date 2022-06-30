@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useTrackVisibility } from 'react-intersection-observer-hook';
 import CommonApi from '../api/CommonApi';
 import LottiePlayer from '../components/main/LottiePlayer';
+import SkillListElement from '../components/main/SkillListElement';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -254,47 +255,15 @@ const MainSkillList = () => {
 			<CommonTitle title={'SKILL'} view={'main'} />
 			<LottiePlayer lotteData={lotteData} />
 			<SkillList ref={targetRef} className={`${wasEverVisible && 'is-active'}`}>
-				{skillList.map((skillEl, index) => (
-					<SkillListEl
-						key={skillEl.id}
-						className={skillEl.eventDetail === true ? 'is-active' : ''}
-						onMouseEnter={() => {
-							listEventIn(index);
-						}}
-						onMouseLeave={() => {
-							listEventLeave();
-						}}
-						onFocus={() => {
-							listEventIn(index);
-						}}
-						onBlur={() => {
-							listEventLeave();
-						}}
-						onClick={() => {
-							listDetailView(index);
-						}}
-						role='button'
-					>
-						<div className='front'>
-							<span className='ico__img--wrap'>
-								<img src={skillEl.imgSrc} alt={skillEl.id} />
-							</span>
-							<p className='title'>{skillEl.names}</p>
-							<div
-								className={
-									skillEl.eventMask === true ? 'mask is-mask-active' : 'mask'
-								}
-							>
-								<span className='mask__title'>CLICK</span>
-							</div>
-						</div>
-						<div className='back'>
-							<p>{skillEl.details}</p>
-							<a href={skillEl.url} target='_blank' rel='noopener noreferrer'>
-								자세히 알아보기
-							</a>
-						</div>
-					</SkillListEl>
+				{skillList.map((skillEl, index: number) => (
+					<SkillListElement
+						key={index}
+						index={index}
+						skillEl={skillEl}
+						listEventIn={listEventIn}
+						listEventLeave={listEventLeave}
+						listDetailView={listDetailView}
+					/>
 				))}
 			</SkillList>
 		</SkillListWrap>
