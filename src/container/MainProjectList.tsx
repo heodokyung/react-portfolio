@@ -6,7 +6,6 @@ import CommonApi from '../api/CommonApi';
 import CommonTitle from '../components/common/CommonTitle';
 import SortingOpt from '../components/main/SortingOpt';
 import ProjectListElement from '../components/main/ProjectListElement';
-
 /****************************************
 * CSS-in-js 정의 부분
 /***************************************/
@@ -149,11 +148,11 @@ const MainProjectList = () => {
 	const sortingList = useCallback(
 		(event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _type: string) => {
 			const { currentTarget } = event;
-
 			siblings(currentTarget, 'is-active');
 			currentTarget.classList.add('is-active');
+
+			// projectList.filter((item) => item.gubun.includes(_type));
 			setProjectList(
-				// projectList.filter((item) => item.gubun.includes(_type))
 				projectList.map((item) => {
 					item.eventShow = false;
 					if (_type === 'all') {

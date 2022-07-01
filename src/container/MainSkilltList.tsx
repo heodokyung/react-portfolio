@@ -6,7 +6,7 @@ import { useTrackVisibility } from 'react-intersection-observer-hook';
 import CommonApi from '../api/CommonApi';
 import LottiePlayer from '../components/main/LottiePlayer';
 import SkillListElement from '../components/main/SkillListElement';
-
+import lotteJsonSkill from '../api/lottie/mainSkill.json';
 /****************************************
 * CSS-in-js 정의 부분
 /***************************************/
@@ -187,20 +187,6 @@ const MainSkillList = () => {
 	}, []);
 
 	/****************************************
-  * Lotte Animation 데이터 받아오기
-  /***************************************/
-	const [lotteData, setLotteData] = useState<any>();
-	useEffect(() => {
-		(async () => {
-			const response = await fetch(
-				'https://assets5.lottiefiles.com/private_files/lf30_WdTEui.json',
-			);
-			const json = await response.json();
-			setLotteData(json);
-		})();
-	}, []);
-
-	/****************************************
   * IntersectionObserver 정의
   * 옵션 정의
   * MainProjectList 참조
@@ -253,7 +239,7 @@ const MainSkillList = () => {
 	return (
 		<SkillListWrap>
 			<CommonTitle title={'SKILL'} view={'main'} />
-			<LottiePlayer lotteData={lotteData} />
+			<LottiePlayer lotteData={lotteJsonSkill} />
 			<SkillList ref={targetRef} className={`${wasEverVisible && 'is-active'}`}>
 				{skillList.map((skillEl, index: number) => (
 					<SkillListElement

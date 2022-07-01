@@ -6,6 +6,7 @@ import { useTrackVisibility } from 'react-intersection-observer-hook';
 import MainDetailList from '../components/main/MainDetailList';
 import CommonApi from '../api/CommonApi';
 import LottiePlayer from '../components/main/LottiePlayer';
+import lotteJsonAbout from '../api/lottie/mainAbout.json';
 
 /****************************************
 * CSS-in-js 정의 부분
@@ -63,24 +64,10 @@ const MainAboutList = () => {
 			});
 	}, []);
 
-	/****************************************
-  * Lotte Animation 데이터 받아오기
-  /***************************************/
-	const [lotteData, setLotteData] = useState<any>();
-	useEffect(() => {
-		(async () => {
-			const response = await fetch(
-				'https://assets4.lottiefiles.com/private_files/lf30_kj1b8w1w.json',
-			);
-			const json = await response.json();
-			setLotteData(json);
-		})();
-	}, []);
-
 	return (
 		<CommonListWrap>
 			<CommonTitle title={'ABOUT'} view={'main'} />
-			<LottiePlayer lotteData={lotteData} />
+			<LottiePlayer lotteData={lotteJsonAbout} />
 			<DetailList
 				ref={targetRef}
 				className={`${wasEverVisible && 'is-active'}`}
