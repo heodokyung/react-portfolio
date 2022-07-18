@@ -138,11 +138,14 @@ const MainProjectList = () => {
 	/****************************************
 	 *  List 이벤트 : Sorting
 	 *****************************************/
+	// 프로젝트 Sorting
 	enum SortCategoryType {
 		'ALL' = 'all',
 		'WEB' = 'w',
 		'MOBILE' = 'm',
 		'RESPONSIVE' = 'r',
+		'FRONT_END' = 'f',
+		'BACK_END' = 'b',
 	}
 
 	const sortingList = useCallback(

@@ -35,93 +35,105 @@ import WebPortfolioV2 from '../pages/detail/web/WebPortfolioV2';
 import CommonTitle from '../components/common/CommonTitle';
 import Progress from '../components/views/Progress';
 import MobileFinnqAppV2 from '../pages/detail/mobile/MobileFinnqAppV2';
+import WebToyCoinList from '../pages/detail/web/WebToyCoinList';
+import WebToyMovieList from '../pages/detail/web/WebToyMovieList';
+import WebFinnqTransmission from '../pages/detail/web/WebFinnqTransmission';
 
 const DetailsViewWrap = styled.article`
-  width: 1160px;
-  margin: 34px auto 0;
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-    padding: 0 24px;
-  }
+	width: 1160px;
+	margin: 34px auto 0;
+	display: flex;
+	justify-content: space-between;
+	@media screen and (max-width: 1200px) {
+		width: 100%;
+		padding: 0 24px;
+	}
 `;
 
 const DetailsView = styled.article`
-  width: 880px;
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-  }
+	width: 880px;
+	@media screen and (max-width: 1200px) {
+		width: 100%;
+	}
 `;
 
 interface ICustomizedState {
-  viewId: string;
-  helmeTitle: string;
-  persent: number;
+	viewId: string;
+	helmeTitle: string;
+	persent: number;
 }
 
 function Details() {
-  const location = useLocation();
-  const state = location.state as ICustomizedState;
+	const location = useLocation();
+	const state = location.state as ICustomizedState;
 
-  // 구조분해
-  const { viewId, helmeTitle, persent } = state;
-  const projectTitle = helmeTitle.replace('<br />', ' ');
+	// 구조분해
+	const { viewId, helmeTitle, persent } = state;
+	const projectTitle = helmeTitle.replace('<br />', ' ');
 
-  return (
-    <>
-      <HelmetProvider>
-        <Helmet>
-          <title>{projectTitle}</title>
-        </Helmet>
-      </HelmetProvider>
-      <DetailsViewWrap>
-        <AsideMenu />
-        <DetailsView>
-          {/* 제목 */}
-          <CommonTitle title={projectTitle} />
+	return (
+		<>
+			<HelmetProvider>
+				<Helmet>
+					<title>{projectTitle}</title>
+				</Helmet>
+			</HelmetProvider>
+			<DetailsViewWrap>
+				<AsideMenu />
+				<DetailsView>
+					{/* 제목 */}
+					<CommonTitle title={projectTitle} />
 
-          {/* 참여율 */}
-          <Progress persent={persent} />
+					{/* 참여율 */}
+					<Progress persent={persent} />
 
-          {/* MOBILE 프로젝트 */}
-          {viewId === 'm_finnq_app_v2' && <MobileFinnqAppV2 />}
-          {viewId === 'm_hana_app' && <MobileHanaApp />}
-          {viewId === 'm_han' && <MobileHan />}
-          {viewId === 'm_tgif' && <MobileTgifKor />}
-          {viewId === 'm_tgif_e' && <MobileTgifEng />}
-          {viewId === 'm_angel' && <MobileAngelKor />}
-          {viewId === 'm_angel_e' && <MobileAngelEng />}
-          {viewId === 'm_lotteria' && <MobileLotteriaKor />}
-          {viewId === 'm_natuur' && <MobileNatuurKor />}
-          {viewId === 'm_krispy' && <MobileKrispyKor />}
-          {viewId === 'm_adcap' && <MobileAdcapsule />}
-          {viewId === 'm_kloudbeer' && <MobileKloudbeer />}
-          {viewId === 'm_lotte' && <MobileLottemembers />}
+					{/* MOBILE 프로젝트 : UI개발 */}
+					{viewId === 'm_finnq_app_v2' && <MobileFinnqAppV2 />}
+					{viewId === 'm_hana_app' && <MobileHanaApp />}
+					{viewId === 'm_han' && <MobileHan />}
+					{viewId === 'm_tgif' && <MobileTgifKor />}
+					{viewId === 'm_tgif_e' && <MobileTgifEng />}
+					{viewId === 'm_angel' && <MobileAngelKor />}
+					{viewId === 'm_angel_e' && <MobileAngelEng />}
+					{viewId === 'm_lotteria' && <MobileLotteriaKor />}
+					{viewId === 'm_natuur' && <MobileNatuurKor />}
+					{viewId === 'm_krispy' && <MobileKrispyKor />}
+					{viewId === 'm_adcap' && <MobileAdcapsule />}
+					{viewId === 'm_kloudbeer' && <MobileKloudbeer />}
+					{viewId === 'm_lotte' && <MobileLottemembers />}
 
-          {/* WEB 프로젝트 */}
-          {viewId === 'w_portfolio_v2' && <WebPortfolioV2 />}
-          {viewId === 'w_finnq_v3' && <WebFinnqV3 />}
-          {viewId === 'w_finnq_v2' && <WebFinnqV2 />}
-          {viewId === 'w_kebhana_open' && <WebKebhanaOpen />}
-          {viewId === 'w_kebhana_company2' && <WebKebhanaCompanyV2 />}
-          {viewId === 'w_kebhana_combine' && <WebKebhanaCombine />}
-          {viewId === 'w_kebhana_company' && <WebKebhanaCompany />}
-          {viewId === 'w_mirae' && <WebMiraeStock />}
-          {viewId === 'w_kebhana' && <WebKebhana />}
-          {viewId === 'w_han' && <WebHan />}
-          {viewId === 'w_benecol' && <WebBenecol />}
-          {viewId === 'w_samsung' && <WebSamsungStock />}
-          {viewId === 'w_namdong_k' && <WebNamdongKor />}
-          {viewId === 'w_namdong_e' && <WebNamdongEng />}
-          {viewId === 'w_lotte' && <WebLottemembers />}
-          {viewId === 'w_dovol' && <WebDovol />}
-          {viewId === 'w_mofat' && <WebMofat />}
-          {viewId === 'w_ramada' && <WebRamada />}
-        </DetailsView>
-      </DetailsViewWrap>
-    </>
-  );
+					{/* WEB 프로젝트 : UI 개발 */}
+					{viewId === 'w_portfolio_v2' && <WebPortfolioV2 />}
+					{viewId === 'w_finnq_v2' && <WebFinnqV2 />}
+					{viewId === 'w_kebhana_open' && <WebKebhanaOpen />}
+					{viewId === 'w_kebhana_company2' && <WebKebhanaCompanyV2 />}
+					{viewId === 'w_kebhana_combine' && <WebKebhanaCombine />}
+					{viewId === 'w_kebhana_company' && <WebKebhanaCompany />}
+					{viewId === 'w_mirae' && <WebMiraeStock />}
+					{viewId === 'w_kebhana' && <WebKebhana />}
+					{viewId === 'w_han' && <WebHan />}
+					{viewId === 'w_benecol' && <WebBenecol />}
+					{viewId === 'w_samsung' && <WebSamsungStock />}
+					{viewId === 'w_namdong_k' && <WebNamdongKor />}
+					{viewId === 'w_namdong_e' && <WebNamdongEng />}
+
+					{/* WEB 프로젝트 : Front-End 개발 */}
+					{viewId === 'w_finnq_v3' && <WebFinnqV3 />}
+					{viewId === 'w_finnq_transmission' && <WebFinnqTransmission />}
+
+					{/* WEB 프로젝트 : Back-End 개발 */}
+					{viewId === 'w_lotte' && <WebLottemembers />}
+					{viewId === 'w_dovol' && <WebDovol />}
+					{viewId === 'w_mofat' && <WebMofat />}
+					{viewId === 'w_ramada' && <WebRamada />}
+
+					{/* WEB 프로젝트 : 토이 프로젝트 */}
+					{viewId === 'w_toy_coin_list' && <WebToyCoinList />}
+					{viewId === 'w_toy_movie_list' && <WebToyMovieList />}
+				</DetailsView>
+			</DetailsViewWrap>
+		</>
+	);
 }
 
 export default Details;

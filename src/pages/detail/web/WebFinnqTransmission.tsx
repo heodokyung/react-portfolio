@@ -2,22 +2,22 @@ import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
 
-const WebFinnqV3 = () => {
+const WebFinnqTransmission = () => {
 	const imgData = [
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_react_1.jpg')}`,
+			src: `${require('../../../images/detailView/web/front/finnq_w_v2_1.jpg')}`,
 			alt: 'Finnq Web Summary1',
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_react_2.jpg')}`,
+			src: `${require('../../../images/detailView/web/front/finnq_w_v2_2.jpg')}`,
 			alt: 'Finnq Web Summary2',
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_react_3.jpg')}`,
+			src: `${require('../../../images/detailView/web/front/finnq_w_v2_3.jpg')}`,
 			alt: 'Finnq Web Summary3',
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_react_4.jpg')}`,
+			src: `${require('../../../images/detailView/web/front/finnq_w_v2_4.jpg')}`,
 			alt: 'Finnq Web Summary4',
 		},
 	];
@@ -180,4 +180,4 @@ const WebFinnqV3 = () => {
 	);
 };
 
-export default WebFinnqV3;
+export default WebFinnqTransmission;

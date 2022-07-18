@@ -69,6 +69,22 @@ const SortingOpt = ({ sortingList, SortCategoryType }: SortProps) => {
 			>
 				Responsive
 			</SortingButton>
+			<SortingButton
+				type='button'
+				onClick={(event) => {
+					sortingList(event, SortCategoryType.FRONT_END);
+				}}
+			>
+				Front-End
+			</SortingButton>
+			<SortingButton
+				type='button'
+				onClick={(event) => {
+					sortingList(event, SortCategoryType.BACK_END);
+				}}
+			>
+				Back-End
+			</SortingButton>
 		</SortingWrap>
 	);
 };
