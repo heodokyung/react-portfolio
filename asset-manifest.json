@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.bde052d7.css",
-    "main.js": "/react-portfolio/static/js/main.37a1d37c.js",
+    "main.js": "/react-portfolio/static/js/main.8869137f.js",
+    "static/media/img_toy_todos3.gif": "/react-portfolio/static/media/img_toy_todos3.7b85c55a0f9499791b47.gif",
     "static/media/finnq_w_react_2.jpg": "/react-portfolio/static/media/finnq_w_react_2.d2ca60e0b77defb7227f.jpg",
     "static/media/img_kebhana_open_4.jpg": "/react-portfolio/static/media/img_kebhana_open_4.3a9c1cd57c2422f9ec2c.jpg",
     "static/media/img_w_han1.jpg": "/react-portfolio/static/media/img_w_han1.a09e2766ddbb2bc32dc7.jpg",
@@ -31,6 +32,7 @@
     "static/media/img_dovol3.jpg": "/react-portfolio/static/media/img_dovol3.33f85ec0ebac7e2dffab.jpg",
     "static/media/namdong_en3.jpg": "/react-portfolio/static/media/namdong_en3.68590c9a0bd24429a52a.jpg",
     "static/media/img_m_tgi1.jpg": "/react-portfolio/static/media/img_m_tgi1.eb2f001e7c379253def4.jpg",
+    "static/media/img_toy_todos2.gif": "/react-portfolio/static/media/img_toy_todos2.45afc5b9b8e0bea306a3.gif",
     "static/media/img_mirae2.jpg": "/react-portfolio/static/media/img_mirae2.190d3a2ac4620cc922ab.jpg",
     "static/media/namdong_kr2.jpg": "/react-portfolio/static/media/namdong_kr2.813aa9305a2f038a328a.jpg",
     "static/media/img_m_kloud1.jpg": "/react-portfolio/static/media/img_m_kloud1.5ad0ac21e13d721a183f.jpg",
@@ -38,6 +40,7 @@
     "static/media/namdong_en2.jpg": "/react-portfolio/static/media/namdong_en2.f4b514349c14ddb45b51.jpg",
     "static/media/img_m_lottemembers4.png": "/react-portfolio/static/media/img_m_lottemembers4.e413f8477e1cbd18cfea.png",
     "static/media/img_m_krispy1.jpg": "/react-portfolio/static/media/img_m_krispy1.f50dcdbbfc1b27abb47d.jpg",
+    "static/media/img_toy_todos1.gif": "/react-portfolio/static/media/img_toy_todos1.2f5d49a54703f74eab59.gif",
     "static/media/img_m_finnq_app5.webp": "/react-portfolio/static/media/img_m_finnq_app5.1b3502f492a4bb1e9bee.webp",
     "static/media/img_w_han2.jpg": "/react-portfolio/static/media/img_w_han2.c31b2c75921182782323.jpg",
     "static/media/img_m_hana_app3.jpg": "/react-portfolio/static/media/img_m_hana_app3.cd2cad419256bea22698.jpg",
@@ -119,10 +122,10 @@
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
     "index.html": "/react-portfolio/index.html",
     "main.bde052d7.css.map": "/react-portfolio/static/css/main.bde052d7.css.map",
-    "main.37a1d37c.js.map": "/react-portfolio/static/js/main.37a1d37c.js.map"
+    "main.8869137f.js.map": "/react-portfolio/static/js/main.8869137f.js.map"
   },
   "entrypoints": [
     "static/css/main.bde052d7.css",
-    "static/js/main.37a1d37c.js"
+    "static/js/main.8869137f.js"
   ]
 }
