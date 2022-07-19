@@ -42,28 +42,17 @@ const WebFinnqV3 = () => {
 				<li>
 					<strong>역할</strong>:
 					<ul className={pageStyle.subList}>
+						<li>Finnq Web을 React + Next.js를 사용하여 개편</li>
+						<li>SPA의 특성이 CSR의 문제 때문에 웹 사이트가 검색되지 않는 이슈가 발생하는데 이 문제를 해결하기 위해 검색엔진 최적화(SEO)를 위하여 Next.js 적용</li>
 						<li>
-							Finnq Web을
-							<a
-								href='https://ko.reactjs.org'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								React
-							</a>
-							로 개편
-						</li>
-						<li>검색엔진 최적화(SEO)를 위해 Next.js 적용</li>
-						<li>
-							마이데이터 제휴 페이지내 Form요소를
+							마이데이터 제휴 페이지 : Form요소를
 							<a
 								href='https://react-hook-form.com'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
 								react-hook-form
-							</a>
-							Api로 개발
+							</a>을 이용하여 Axios로 API 개발 적용
 						</li>
 						<li>
 							<a
@@ -80,7 +69,7 @@ const WebFinnqV3 = () => {
 				<li>
 					<strong>성과</strong>:
 					<ul className={pageStyle.subList}>
-						<li>Next.js로 구현하여 React로 웹 검색이 가능하도록 구현</li>
+						<li>Next.js로 구현하여 React로 웹 사이트를 구현하였지만 웹 검색이 가능하도록 구현</li>
 						<li>
 							정적인 메인 화면을
 							<a
@@ -90,18 +79,12 @@ const WebFinnqV3 = () => {
 							>
 								Intersection Observer API
 							</a>
-							를 이용하여
-							<a
-								href='https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								CSS Animate
-							</a>
-							를 적용, UI/UX 향상
+							를 이용하여 CSS Animate를 적용
 						</li>
+						<li>SCSS를 적용 &rarr; CSS 클래스 모듈적용</li>
+						<li>웹표준 및 시멘틱 마크업 적용</li>
 						<li>Web, Mobile 디바이스에 맞게 반응형으로 제작</li>
-						<li>IE10까지 크로스 브라우징 대응</li>
+						<li>IE10까지 크로스 브라우징 대응</li>						
 					</ul>
 				</li>
 				<li>
