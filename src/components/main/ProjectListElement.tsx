@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
+import { IProJect } from '../../atoms';
 const fadeInAni = keyframes`
   from {
     opacity: 0;
@@ -129,7 +130,7 @@ const ProjectImg = styled.img`
 `;
 
 type ProjectProps = {
-	projectEl: any;
+	projectEl: IProJect;
 	listEventIn(index: number): void;
 	listEventLeave(): void;
 	index: number;

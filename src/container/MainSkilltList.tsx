@@ -7,6 +7,7 @@ import CommonApi from '../api/CommonApi';
 import LottiePlayer from '../components/main/LottiePlayer';
 import SkillListElement from '../components/main/SkillListElement';
 import lotteJsonSkill from '../api/lottie/mainSkill.json';
+import { ISkillList } from '../atoms';
 /****************************************
 * CSS-in-js 정의 부분
 /***************************************/
@@ -52,115 +53,6 @@ const SkillList = styled.ul`
 		animation-delay: 0.4s;
 	}
 `;
-
-const SkillListEl = styled.li`
-	display: inline-block;
-	position: relative;
-	height: 210px;
-	text-align: center;
-	color: ${(props) => props.theme.textColor};
-	border: 1px solid ${(props) => props.theme.listColor};
-	border-radius: 4px;
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	background-color: ${(props) => props.theme.subListColor};
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
-
-	.front,
-	.back {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		box-sizing: border-box;
-		backface-visibility: hidden;
-	}
-
-	.front {
-		z-index: 5;
-		transform: rotateY(0deg);
-		.title {
-			position: absolute;
-			top: 130px;
-			left: 0;
-			right: 0;
-			text-align: center;
-			width: 100%;
-		}
-	}
-
-	.back {
-		transform: rotateY(180deg);
-		padding: 20px;
-		background: ${(props) => props.theme.subListColor};
-		color: ${(props) => props.theme.textColor};
-		font-size: 14px;
-		line-height: 16px;
-		word-break: keep-all;
-		a {
-			display: block;
-			position: absolute;
-			left: 20px;
-			right: 20px;
-			bottom: 15px;
-			padding: 10px 0;
-			border-radius: 4px;
-			border: 1px solid ${(props) => props.theme.textColor};
-		}
-	}
-
-	.ico__img--wrap {
-		display: inline-block;
-		width: 64px;
-		height: 64px;
-		margin-top: 40px;
-		img {
-			width: 100%;
-		}
-	}
-
-	.mask {
-		display: none;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.4);
-		color: #fff;
-		.mask__title {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 60px;
-			height: 60px;
-			border-radius: 50%;
-			margin: -30px 0 0 -30px;
-			text-align: center;
-			color: #fff;
-			border: 2px solid #fff;
-			line-height: 60px;
-			font-weight: bold;
-			font-size: 16px;
-			z-index: 5;
-		}
-		&.is-mask-active {
-			display: block;
-		}
-	}
-
-	&.is-active {
-		transform: rotateY(180deg);
-	}
-`;
-interface ISkillList {
-	imgSrc: string;
-	id: string;
-	names: string;
-	details: string;
-	url: string;
-	eventMask: boolean;
-	eventDetail: boolean;
-}
 
 const MainSkillList = () => {
 	/****************************************

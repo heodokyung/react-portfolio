@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ISkillList } from '../../atoms';
 
 const SkillListEl = styled.li`
 	display: inline-block;
@@ -101,7 +102,7 @@ const SkillListEl = styled.li`
 `;
 
 type SkillProps = {
-	skillEl: any;
+	skillEl: ISkillList;
 	listEventIn(index: number): void;
 	listEventLeave(): void;
 	listDetailView(index: number): void;

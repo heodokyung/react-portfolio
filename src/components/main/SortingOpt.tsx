@@ -28,7 +28,10 @@ const SortingButton = styled.button`
 `;
 
 type SortProps = {
-	sortingList: any;
+	sortingList: (
+		event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+		_type: string,
+	) => void;
 	SortCategoryType: any;
 };
 

@@ -6,6 +6,7 @@ import CommonApi from '../api/CommonApi';
 import CommonTitle from '../components/common/CommonTitle';
 import SortingOpt from '../components/main/SortingOpt';
 import ProjectListElement from '../components/main/ProjectListElement';
+import { IProJect } from '../atoms';
 /****************************************
 * CSS-in-js 정의 부분
 /***************************************/
@@ -49,21 +50,6 @@ const ProjectList = styled.ul`
 	}
 `;
 
-interface IProJect {
-	gubun: string;
-	type: string;
-	leng: string;
-	new: boolean;
-	date: string;
-	link: string;
-	id: string;
-	imgSrc: string;
-	title: string;
-	persent: number;
-	desc?: string;
-	eventShow?: boolean;
-	eventActive?: boolean;
-}
 const MainProjectList = () => {
 	/****************************************
 	 *  프로젝트 List => JSOM 데이터 받아오기
@@ -138,7 +124,6 @@ const MainProjectList = () => {
 	/****************************************
 	 *  List 이벤트 : Sorting
 	 *****************************************/
-	// 프로젝트 Sorting
 	enum SortCategoryType {
 		'ALL' = 'all',
 		'WEB' = 'w',
@@ -147,7 +132,6 @@ const MainProjectList = () => {
 		'FRONT_END' = 'f',
 		'BACK_END' = 'b',
 	}
-
 	const sortingList = useCallback(
 		(event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _type: string) => {
 			const { currentTarget } = event;
