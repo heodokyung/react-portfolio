@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.6d2ddb5c.css",
-    "main.js": "/react-portfolio/static/js/main.08af41b4.js",
+    "main.css": "/react-portfolio/static/css/main.bde052d7.css",
+    "main.js": "/react-portfolio/static/js/main.ffb8531d.js",
     "static/media/finnq_w_react_2.jpg": "/react-portfolio/static/media/finnq_w_react_2.d2ca60e0b77defb7227f.jpg",
     "static/media/img_kebhana_open_4.jpg": "/react-portfolio/static/media/img_kebhana_open_4.3a9c1cd57c2422f9ec2c.jpg",
     "static/media/img_w_han1.jpg": "/react-portfolio/static/media/img_w_han1.a09e2766ddbb2bc32dc7.jpg",
@@ -109,21 +109,20 @@
     "static/media/img_w_benecol2.jpg": "/react-portfolio/static/media/img_w_benecol2.c285dc3c9645d9645579.jpg",
     "static/media/img_w_stock1.jpg": "/react-portfolio/static/media/img_w_stock1.8a561243e5cbb8bb5212.jpg",
     "static/media/img_w_stock2.jpg": "/react-portfolio/static/media/img_w_stock2.c6509ebce6db898278da.jpg",
-    "static/media/img_mydata_finnq5.png": "/react-portfolio/static/media/img_mydata_finnq5.27f69e4922dffb20dfe1.png",
+    "static/media/img_mydata_finnq3.png": "/react-portfolio/static/media/img_mydata_finnq3.27f69e4922dffb20dfe1.png",
     "static/media/img_w_stock3.jpg": "/react-portfolio/static/media/img_w_stock3.12154b3ad9439ce42c33.jpg",
     "static/media/img_toy_coin4.png": "/react-portfolio/static/media/img_toy_coin4.a039fcf23f6abe46e0cb.png",
     "static/media/img_toy_coin3.png": "/react-portfolio/static/media/img_toy_coin3.3f0ea9bdf36c543bea9e.png",
-    "static/media/img_mydata_finnq4.png": "/react-portfolio/static/media/img_mydata_finnq4.86601bed49243f5cad25.png",
     "static/media/img_toy_coin1.png": "/react-portfolio/static/media/img_toy_coin1.e3e1be7698101a3e1694.png",
     "static/media/img_mofat.jpg": "/react-portfolio/static/media/img_mofat.d263ce1e528b251a01c7.jpg",
     "static/media/img_toy_coin2.png": "/react-portfolio/static/media/img_toy_coin2.7b10a057d15145bda541.png",
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.6d2ddb5c.css.map": "/react-portfolio/static/css/main.6d2ddb5c.css.map",
-    "main.08af41b4.js.map": "/react-portfolio/static/js/main.08af41b4.js.map"
+    "main.bde052d7.css.map": "/react-portfolio/static/css/main.bde052d7.css.map",
+    "main.ffb8531d.js.map": "/react-portfolio/static/js/main.ffb8531d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d2ddb5c.css",
-    "static/js/main.08af41b4.js"
+    "static/css/main.bde052d7.css",
+    "static/js/main.ffb8531d.js"
   ]
 }
