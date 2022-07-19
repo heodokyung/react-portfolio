@@ -38,6 +38,7 @@ import MobileFinnqAppV2 from '../pages/detail/mobile/MobileFinnqAppV2';
 import WebToyCoinList from '../pages/detail/web/WebToyCoinList';
 import WebToyMovieList from '../pages/detail/web/WebToyMovieList';
 import WebFinnqTransmission from '../pages/detail/web/WebFinnqTransmission';
+import WebToyTodoList from '../pages/detail/web/WebToyTodoList';
 
 const DetailsViewWrap = styled.article`
 	width: 1160px;
@@ -128,6 +129,7 @@ function Details() {
 					{viewId === 'w_ramada' && <WebRamada />}
 
 					{/* WEB 프로젝트 : 토이 프로젝트 */}
+					{viewId === 'w_toy_todo_list' && <WebToyTodoList />}
 					{viewId === 'w_toy_coin_list' && <WebToyCoinList />}
 					{viewId === 'w_toy_movie_list' && <WebToyMovieList />}
 				</DetailsView>
