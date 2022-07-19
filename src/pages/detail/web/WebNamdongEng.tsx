@@ -93,7 +93,6 @@ const WebNamdongEng = () => {
 			</ul>
 
 			<ReactSwiper imgData={imgData} />
-
 			<ListBtn />
 		</>
 	);

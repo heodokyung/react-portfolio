@@ -17,9 +17,10 @@
   font-size: 16px;
   padding-left: 9px;
   line-height: 20px;
+  margin-top:6px;
 }
 .description > li + li {
-  margin-top:16px;
+  margin-top:20px;
 }
 
 .description li:before {
@@ -39,14 +40,12 @@
   text-decoration: underline;
 }
 .description li strong {font-weight:bold;}
-.description .subList {
-  margin-left:12px;
-}
+
 .description .subList li {
   position: relative;
   padding-left: 10px;
   word-break: keep-all;
-  margin-top:8px;
+  margin-top:12px;
 }
 .description .subList li:before {
   display: inline-block;

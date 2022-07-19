@@ -34,7 +34,7 @@ const WebSamsungStock = () => {
 				</li>
 				<li>
 					<strong>성과</strong>:
-					<ul>
+					<ul className={pageStyle.subList}>
 						<li>
 							<a
 								href='http://wa.or.kr/waMark/status_new.asp'

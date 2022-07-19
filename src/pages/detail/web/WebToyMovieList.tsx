@@ -27,8 +27,8 @@ const WebToyMovieList = () => {
 				</li>
 				<li>
 					<strong>목표/역할</strong>:
-					<ul>
-						<li>React로 영화 정보를 보여주는 사이트 만들기</li>
+					<ul className={pageStyle.subList}>
+						<li>React로 영화 정보 및 순위를 보여주는 사이트 구현</li>
 						<li>
 							<a
 								href='https://yts.mx/api'
@@ -37,15 +37,15 @@ const WebToyMovieList = () => {
 							>
 								yts.mx
 							</a>
-							API를 이용하여 영화 정보 노출
+							API를 이용하여 영화 정보를 제공
 						</li>
-						<li>스타일링은 styled-components를 사용</li>
+						<li>styled-components를 사용하여 스타일링 적용</li>
 						<li>
 							react-helmet을 이용해 상세 페이지 이동시 페이지 Title이 페이지에
-							맞게 변경될 수 있도록 적용(웹 접근성)
+							맞게 변경될 수 있도록 적용 (웹 접근성)
 						</li>
 						<li>axios로 데이터 호출 및 관리</li>
-						<li>React-dom 적용</li>
+						<li>상세페이지 이동 시 React-dom 적용</li>
 					</ul>
 				</li>
 				<li>

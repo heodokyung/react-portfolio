@@ -104,7 +104,6 @@ const WebKebhanaCompanyV2 = () => {
 			</ul>
 
 			<ReactSwiper imgData={imgData} />
-
 			<ListBtn />
 		</>
 	);

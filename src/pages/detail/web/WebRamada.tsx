@@ -37,7 +37,6 @@ const WebRamada = () => {
 			</ul>
 
 			<ReactSwiper imgData={imgData} />
-
 			<ListBtn />
 		</>
 	);

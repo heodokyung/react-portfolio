@@ -134,7 +134,6 @@ const WebKebhanaOpen = () => {
 			</ul>
 
 			<ReactSwiper imgData={imgData} />
-
 			<ListBtn />
 		</>
 	);

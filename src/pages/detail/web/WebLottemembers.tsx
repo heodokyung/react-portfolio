@@ -67,7 +67,6 @@ const WebLottemembers = () => {
 			</ul>
 
 			<ReactSwiper imgData={imgData} />
-
 			<ListBtn />
 		</>
 	);

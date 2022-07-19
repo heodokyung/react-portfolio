@@ -5,162 +5,68 @@ import ReactSwiper from '../../../components/views/ReactSwiper';
 const WebFinnqTransmission = () => {
 	const imgData = [
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_v2_1.jpg')}`,
-			alt: 'Finnq Web Summary1',
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq1.png')}`,
+			alt: 'Finnq 전송요구 통지서 요약1',
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_v2_2.jpg')}`,
-			alt: 'Finnq Web Summary2',
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq2.png')}`,
+			alt: 'Finnq 전송요구 통지서 요약3',
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_v2_3.jpg')}`,
-			alt: 'Finnq Web Summary3',
-		},
-		{
-			src: `${require('../../../images/detailView/web/front/finnq_w_v2_4.jpg')}`,
-			alt: 'Finnq Web Summary4',
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq3.png')}`,
+			alt: 'Finnq 전송요구 통지서 요약5',
 		},
 	];
 
 	return (
 		<>
-			<div className={pageStyle.movieWrapper}>
-				<iframe
-					width='100%'
-					src='https://www.youtube.com/embed/NWOL_URztqc?rel=0'
-					title='YouTube video player'
-					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-					className={pageStyle.moviePlayer}
-				/>
-			</div>
-
 			{/* 상세설명 */}
 			<ul className={pageStyle.description}>
 				<li>
-					<strong>기간</strong>: 2021.04.10 ~ 재직중
+					<strong>기간</strong>: 2022.06.13 ~ 2021.06.17
 				</li>
 				<li>
-					<strong>역할</strong>:
+					<strong>작업내용</strong>:
 					<ul className={pageStyle.subList}>
 						<li>
-							Finnq Web을
-							<a
-								href='https://ko.reactjs.org'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								React
-							</a>
-							로 개편
-						</li>
-						<li>검색엔진 최적화(SEO)를 위해 Next.js 적용</li>
-						<li>
-							마이데이터 제휴 페이지내 Form요소를
-							<a
-								href='https://react-hook-form.com'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								react-hook-form
-							</a>
-							Api로 개발
+							1년에 한 번 Finnq App의 마이데이터의 재인증을 위한 사용자의
+							전송요구 페이지 개발을 진행
 						</li>
 						<li>
-							<a
-								href='https://terms.naver.com/entry.nhn?docId=2067169&amp;cid=50305&amp;categoryId=50305'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								트러블 슈팅(trouble shooting)
-							</a>
-							및 단위테스트
+							전송요구 갱신이 필요한 유저에게 고유한 KEY값이 포함된 URL을 푸쉬
+							알림으로 전송
+						</li>
+						<li>
+							해당 URL로 진입한 유저는 자신의 생년월일을 입력창에 입력하면 URL에
+							포함된 고유 키캅을 '쿼리 String'으로 추출하여 데이터를 반환해주는
+							Api에 '생년월일 + 키값'을 전송
+						</li>
+						<li>
+							Api에서는 사용자가 전달한 정보를 기반으로 '성공' 또는 '실패'
+							정보를 반환
+						</li>
+						<li>
+							정보조회가 '성공'할 경우 자신이 인증했던 전송요구 페이지 상세를
+							노출하고 '실패'할 경우 생년월일 재입력 또는 서버에서 전달받은
+							에러메시지를 노출
 						</li>
 					</ul>
 				</li>
 				<li>
 					<strong>성과</strong>:
 					<ul className={pageStyle.subList}>
-						<li>Next.js로 구현하여 React로 웹 검색이 가능하도록 구현</li>
 						<li>
-							정적인 메인 화면을
-							<a
-								href='https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								Intersection Observer API
-							</a>
-							를 이용하여
-							<a
-								href='https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								CSS Animate
-							</a>
-							를 적용, UI/UX 향상
+							React로 구현 및 반응형으로 구현하여 웹, 모바일 모두 대응할 수
+							있도록 구현.
 						</li>
-						<li>Web, Mobile 디바이스에 맞게 반응형으로 제작</li>
-						<li>IE10까지 크로스 브라우징 대응</li>
+						<li>IE10까지 크로스 브라우징 대응.</li>
+						<li>styled-components로 스타일링 구현</li>
+						<li>axios로 Api 데이터 통신</li>
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>:
-					<a
-						href='https://ko.reactjs.org/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						React
-					</a>
-					,
-					<a
-						href='https://sass-lang.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						SCSS
-					</a>
-					,
-					<a
-						href='https://styled-components.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						styled-components
-					</a>
-					,
-					<a
-						href='http://vanilla-js.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Vanilla JS
-					</a>
-					,
-					<a
-						href='https://github.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Git/SVN
-					</a>
-					,
-					<a
-						href='https://slack.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Slack
-					</a>
-					,
-					<a
-						href='https://nextjs.org/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Next.js
-					</a>
+					<strong>작업환경</strong>: React, styled-components, Git/SVN, Slack,
+					axios, Next.js
 				</li>
 				<li>
 					<a
@@ -174,6 +80,7 @@ const WebFinnqTransmission = () => {
 			</ul>
 
 			<ReactSwiper imgData={imgData} />
+			{/* <ScrollView imgData={imgData} /> */}
 
 			<ListBtn />
 		</>

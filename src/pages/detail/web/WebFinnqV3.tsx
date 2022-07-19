@@ -105,62 +105,8 @@ const WebFinnqV3 = () => {
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>:
-					<a
-						href='https://ko.reactjs.org/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						React
-					</a>
-					,
-					<a
-						href='https://sass-lang.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						SCSS
-					</a>
-					,
-					<a
-						href='https://styled-components.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						styled-components
-					</a>
-					,
-					<a
-						href='http://vanilla-js.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Vanilla JS
-					</a>
-					,
-					<a
-						href='https://github.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Git/SVN
-					</a>
-					,
-					<a
-						href='https://slack.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Slack
-					</a>
-					,
-					<a
-						href='https://nextjs.org/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Next.js
-					</a>
+					<strong>작업환경</strong>: React, SCSS, styled-components, Vanilla JS,
+					Git/SVN, Slack, Next.js
 				</li>
 				<li>
 					<a
