@@ -42,6 +42,24 @@ const WebToyTodoList = () => {
 					</ul>
 				</li>
 				<li>
+					<strong>설명</strong>:
+					<ul className={pageStyle.subList}>
+						<li>할 일 관리 앱 입니다.</li>
+						<li>
+							입력창에 할 일을 입력하면 할 일 목록이 순차적으로 리스트 업
+							됩니다.
+						</li>
+						<li>
+							상태에 따라 할일, 진행중, 완료 버튼을 클릭하면 각 각의 그룹으로 할
+							일 목록 상태가 변경됩니다.
+						</li>
+						<li>
+							할 일 목록은 LocalStroge에 저장되며 삭제 버튼으로 해당 할 일 목록
+							삭제가 가능합니다.
+						</li>
+					</ul>
+				</li>
+				<li>
 					<strong>적용기술</strong>: ReactJS, TypeScript, styled-components,
 					recoil, react-hook-form, recoil-persist
 				</li>
@@ -52,7 +70,7 @@ const WebToyTodoList = () => {
 						rel='noopener noreferrer'
 					>
 						<strong>웹 사이트 바로가기</strong>:
-						https://heodokyung.github.io/react-coin-list/
+						https://heodokyung.github.io/react-todo-list/
 					</a>
 				</li>
 			</ul>
