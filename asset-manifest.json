@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.bde052d7.css",
-    "main.js": "/react-portfolio/static/js/main.8869137f.js",
+    "main.css": "/react-portfolio/static/css/main.8648fd77.css",
+    "main.js": "/react-portfolio/static/js/main.32b62e18.js",
     "static/media/img_toy_todos3.gif": "/react-portfolio/static/media/img_toy_todos3.7b85c55a0f9499791b47.gif",
+    "static/media/img_toy_netflix2.png": "/react-portfolio/static/media/img_toy_netflix2.cf731d3134dfc3b070e3.png",
+    "static/media/img_toy_netflix1.png": "/react-portfolio/static/media/img_toy_netflix1.16a650eeb3f76693fc75.png",
+    "static/media/img_toy_netflix3.png": "/react-portfolio/static/media/img_toy_netflix3.5d84908f27207806f44d.png",
     "static/media/finnq_w_react_2.jpg": "/react-portfolio/static/media/finnq_w_react_2.d2ca60e0b77defb7227f.jpg",
     "static/media/img_kebhana_open_4.jpg": "/react-portfolio/static/media/img_kebhana_open_4.3a9c1cd57c2422f9ec2c.jpg",
     "static/media/img_w_han1.jpg": "/react-portfolio/static/media/img_w_han1.a09e2766ddbb2bc32dc7.jpg",
@@ -121,11 +124,11 @@
     "static/media/img_toy_coin2.png": "/react-portfolio/static/media/img_toy_coin2.7b10a057d15145bda541.png",
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.bde052d7.css.map": "/react-portfolio/static/css/main.bde052d7.css.map",
-    "main.8869137f.js.map": "/react-portfolio/static/js/main.8869137f.js.map"
+    "main.8648fd77.css.map": "/react-portfolio/static/css/main.8648fd77.css.map",
+    "main.32b62e18.js.map": "/react-portfolio/static/js/main.32b62e18.js.map"
   },
   "entrypoints": [
-    "static/css/main.bde052d7.css",
-    "static/js/main.8869137f.js"
+    "static/css/main.8648fd77.css",
+    "static/js/main.32b62e18.js"
   ]
 }
