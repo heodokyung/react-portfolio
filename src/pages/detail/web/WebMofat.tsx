@@ -1,12 +1,12 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebMofat = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/back/img_mofat.jpg')}`,
-			alt: '외교통상부 대표 이미지',
+			alt: '외교통상부 대표 이미지(내부 시스템이라 상세보기 화면이 없습니다.)',
 		},
 	];
 
@@ -45,7 +45,7 @@ const WebMofat = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

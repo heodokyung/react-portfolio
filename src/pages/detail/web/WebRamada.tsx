@@ -1,20 +1,20 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebRamada = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/back/img_w_ramada1.jpg')}`,
-			alt: 'Ramada 웹 페이지 스크린 샷1',
+			alt: 'Ramada 웹 페이지: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/back/img_w_ramada2.jpg')}`,
-			alt: 'Ramada 웹 페이지 스크린 샷2',
+			alt: 'Ramada 웹 페이지: 카지노 소개',
 		},
 		{
 			src: `${require('../../../images/detailView/web/back/img_w_ramada3.jpg')}`,
-			alt: 'Ramada 웹 페이지 스크린 샷3',
+			alt: 'Ramada 웹 페이지: 이용안내',
 		},
 	];
 
@@ -36,7 +36,7 @@ const WebRamada = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

@@ -1,24 +1,24 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebKebhanaOpen = () => {
 	const imgData = [
 		{
 			src: `${require('../../..//images/detailView/web/ui/img_kebhana_open_1.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷1',
+			alt: 'KEB 하나은행 기업뱅킹 통합개편: 메인',
 		},
 		{
 			src: `${require('../../..//images/detailView/web/ui/img_kebhana_open_2.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷2',
+			alt: 'KEB 하나은행 기업뱅킹 통합개편: 로그인',
 		},
 		{
 			src: `${require('../../..//images/detailView/web/ui/img_kebhana_open_3.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷3',
+			alt: 'KEB 하나은행 기업뱅킹 통합개편: 인증센터',
 		},
 		{
 			src: `${require('../../..//images/detailView/web/ui/img_kebhana_open_4.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷4',
+			alt: 'KEB 하나은행 기업뱅킹 통합개편: 발급수ㅈ수료 환불신청',
 		},
 	];
 
@@ -133,7 +133,7 @@ const WebKebhanaOpen = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

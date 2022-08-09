@@ -1,24 +1,24 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebKebhana = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_1.jpg')}`,
-			alt: 'KEB 하나은행 웹 개인뱅킹 페이지 스크린샷1',
+			alt: 'KEB 하나은행 웹 개인뱅킹(DAY2): 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_2.jpg')}`,
-			alt: 'KEB 하나은행 웹 개인뱅킹 페이지 스크린샷2',
+			alt: 'KEB 하나은행 웹 개인뱅킹(DAY2): 상품 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_3.jpg')}`,
-			alt: 'KEB 하나은행 웹 개인뱅킹 페이지 스크린샷3',
+			alt: 'KEB 하나은행 웹 개인뱅킹(DAY2): 골드클럽 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_4.jpg')}`,
-			alt: 'KEB 하나은행 웹 개인뱅킹 페이지 스크린샷4',
+			alt: 'KEB 하나은행 웹 개인뱅킹(DAY2): 해외 공관 사이트',
 		},
 	];
 	return (
@@ -110,8 +110,8 @@ const WebKebhana = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
-
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

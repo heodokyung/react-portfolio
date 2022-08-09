@@ -1,20 +1,21 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebHan = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_han1.jpg')}`,
-			alt: '한국수력원자력 스크린샷1',
+			alt: '한국수력원자력 개편: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_han2.jpg')}`,
-			alt: '한국수력원자력 스크린샷2',
+			alt: '한국수력원자력 개편: 경영공시 서브 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_han3.jpg')}`,
-			alt: '한국수력원자력 스크린샷3',
+			alt: '한국수력원자력 개편: 홍보동영상',
 		},
 	];
 
@@ -104,7 +105,7 @@ const WebHan = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

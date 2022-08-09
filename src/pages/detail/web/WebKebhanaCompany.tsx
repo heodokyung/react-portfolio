@@ -1,24 +1,24 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebKebhanaCompany = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_company_1.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷1',
+			alt: 'KEB 하나은행 기업뱅킹 웹 페이지: 메인(Light 분리 Ver)',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_company_2.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷2',
+			alt: 'KEB 하나은행 기업뱅킹 웹 페이지: 로그인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_company_3.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷3',
+			alt: 'KEB 하나은행 기업뱅킹 웹 페이지: 상세페이지',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_company_4.jpg')}`,
-			alt: 'KEB 하나은행 웹 페이지 스크린샷4',
+			alt: 'KEB 하나은행 기업뱅킹 웹 페이지: FAQ',
 		},
 	];
 
@@ -98,7 +98,7 @@ const WebKebhanaCompany = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

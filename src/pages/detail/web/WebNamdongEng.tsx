@@ -1,20 +1,21 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebNamdongEng = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/namdong_en1.jpg')}`,
-			alt: '남동발전 영문 사이트 메인 페이지 스크린샷1',
+			alt: '남동발전 영문 사이트 개편: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/namdong_en2.jpg')}`,
-			alt: '남동발전 영문 사이트 메인 페이지 스크린샷2',
+			alt: '남동발전 영문 사이트 개편: 페이지 상세',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/namdong_en3.jpg')}`,
-			alt: '남동발전 영문 사이트 메인 페이지 스크린샷3',
+			alt: '남동발전 영문 사이트 개편: SOCIAL VOLUNTEERS',
 		},
 	];
 
@@ -92,7 +93,7 @@ const WebNamdongEng = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

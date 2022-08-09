@@ -1,19 +1,20 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 const WebDovol = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/back/img_dovol1.jpg')}`,
-			alt: '청소년 자원봉사 메인 페이지 스크린샷1',
+			alt: '청소년 자원봉사 DOVOL 개편: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/back/img_dovol2.jpg')}`,
-			alt: '청소년 자원봉사 메인 페이지 스크린샷2',
+			alt: '청소년 자원봉사 DOVOL 개편: 통합회원/전환',
 		},
 		{
 			src: `${require('../../../images/detailView/web/back/img_dovol3.jpg')}`,
-			alt: '청소년 자원봉사 메인 페이지 스크린샷3',
+			alt: '청소년 자원봉사 DOVOL 개편: 봉사활동 검색/신청',
 		},
 	];
 
@@ -50,7 +51,7 @@ const WebDovol = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

@@ -1,20 +1,25 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebFinnqTransmission = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/front/img_mydata_finnq1.png')}`,
 			alt: 'Finnq 전송요구 통지서 요약1',
+			option: true,
+			title: '모바일, 웹 공통 진입 화면',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/img_mydata_finnq2.png')}`,
-			alt: 'Finnq 전송요구 통지서 요약3',
+			alt: 'Finnq 전송요구 통지서 요약2',
+			option: true,
+			title: '모바일 화면: 에러 반환',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/img_mydata_finnq3.png')}`,
-			alt: 'Finnq 전송요구 통지서 요약5',
+			alt: 'Finnq 전송요구 통지서 요약3',
+			title: '웹 화면: 전송요구 통지서 내용 노출',
 		},
 	];
 
@@ -53,7 +58,7 @@ const WebFinnqTransmission = () => {
 					</ul>
 				</li>
 				<li>
-					<strong>성과</strong>:
+					<strong>결과</strong>:
 					<ul className={pageStyle.subList}>
 						<li>
 							React로 구현 및 반응형으로 구현하여 웹, 모바일 모두 대응할 수
@@ -62,6 +67,7 @@ const WebFinnqTransmission = () => {
 						<li>IE10까지 크로스 브라우징 대응.</li>
 						<li>styled-components로 스타일링 구현</li>
 						<li>axios로 Api 데이터 통신</li>
+						<li>중요데이터(계좌 등)는 마스킹 처리</li>
 					</ul>
 				</li>
 				<li>
@@ -79,8 +85,8 @@ const WebFinnqTransmission = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
-			{/* <ScrollView imgData={imgData} /> */}
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

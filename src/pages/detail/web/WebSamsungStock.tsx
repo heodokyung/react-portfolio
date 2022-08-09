@@ -1,20 +1,21 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebSamsungStock = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_stock1.jpg')}`,
-			alt: '삼성증권, 삼성뱅킹 웹 페이지 스크린샷1',
+			alt: '삼성증권, 삼성뱅킹 웹 페이지 개편: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_stock2.jpg')}`,
-			alt: '삼성증권, 삼성뱅킹 웹 페이지 스크린샷2',
+			alt: '삼성증권, 삼성뱅킹 웹 페이지 개편: 추천상품',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_stock3.jpg')}`,
-			alt: '삼성증권, 삼성뱅킹 웹 페이지 스크린샷3',
+			alt: '삼성증권, 삼성뱅킹 웹 페이지 개편: 스마트 검색',
 		},
 	];
 
@@ -133,7 +134,8 @@ const WebSamsungStock = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

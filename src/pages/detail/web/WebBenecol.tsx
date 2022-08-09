@@ -1,24 +1,25 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebBenecol = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_benecol1.jpg')}`,
-			alt: '파스퇴르 베네콜 스크린샷1',
+			alt: '롯데푸드 파스퇴르 베네콜 웹: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_benecol2.jpg')}`,
-			alt: '파스퇴르 베네콜 스크린샷2',
+			alt: '롯데푸드 파스퇴르 베네콜 웹: 메인 Layer Popup ',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_benecol3.jpg')}`,
-			alt: '파스퇴르 베네콜 스크린샷3',
+			alt: '롯데푸드 파스퇴르 베네콜 웹: 브랜드 스토리',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_w_benecol4.jpg')}`,
-			alt: '파스퇴르 베네콜 스크린샷4',
+			alt: '롯데푸드 파스퇴르 베네콜 웹: FAQ',
 		},
 	];
 
@@ -87,7 +88,7 @@ const WebBenecol = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

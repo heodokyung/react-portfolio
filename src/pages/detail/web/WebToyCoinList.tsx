@@ -1,24 +1,29 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+// import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebToyCoinList = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_coin1.png')}`,
-			alt: '암호화폐 정보 리스트 이미지1',
+			alt: '암호화폐 코인 리스트 화면(테마:Light Mode)',
+			option: true,
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_coin2.png')}`,
-			alt: '암호화폐 정보 리스트 이미지2',
+			alt: '암호화폐 코인 리스트 화면(테마:Dark Mode)',
+			option: true,
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_coin3.png')}`,
-			alt: '암호화폐 정보 리스트 이미지3',
+			alt: '암호화폐 코인 상세 화면(차트 리스트)',
+			option: true,
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_coin4.png')}`,
-			alt: '암호화폐 정보 리스트 이미지4',
+			alt: '암호화폐 코인 상세 화면(가격 정보 갱신)',
+			option: true,
 		},
 	];
 
@@ -81,7 +86,8 @@ const WebToyCoinList = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

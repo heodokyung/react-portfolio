@@ -1,20 +1,21 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebLottemembers = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/back/img_w_lotte1.jpg')}`,
-			alt: '롯데멤버스 메인 페이지 스크린샷1',
+			alt: '롯데멤버스 메인 페이지 통합 개편: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/back/img_w_lotte2.jpg')}`,
-			alt: '롯데멤버스 메인 페이지 스크린샷2',
+			alt: '롯데멤버스 메인 페이지 통합 개편: 제휴서 찾기',
 		},
 		{
 			src: `${require('../../../images/detailView/web/back/img_w_lotte3.jpg')}`,
-			alt: '롯데멤버스 메인 페이지 스크린샷3',
+			alt: '롯데멤버스 메인 페이지 통합 개편: 통합 비밀번호',
 		},
 	];
 
@@ -66,7 +67,7 @@ const WebLottemembers = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

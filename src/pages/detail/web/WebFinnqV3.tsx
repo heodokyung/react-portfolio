@@ -1,24 +1,25 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebFinnqV3 = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/front/finnq_w_react_1.jpg')}`,
-			alt: 'Finnq Web Summary1',
+			alt: 'Finnq Web: 메인(intersection observer 적용) ',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/finnq_w_react_2.jpg')}`,
-			alt: 'Finnq Web Summary2',
+			alt: 'Finnq Web: 마이데이터 제휴(React Hook Form 적용)',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/finnq_w_react_3.jpg')}`,
-			alt: 'Finnq Web Summary3',
+			alt: 'Finnq Web: 대출비교 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/finnq_w_react_4.jpg')}`,
-			alt: 'Finnq Web Summary4',
+			alt: 'Finnq Web: 공동인증서',
 		},
 	];
 
@@ -43,7 +44,11 @@ const WebFinnqV3 = () => {
 					<strong>역할</strong>:
 					<ul className={pageStyle.subList}>
 						<li>Finnq Web을 React + Next.js를 사용하여 개편</li>
-						<li>SPA의 특성이 CSR의 문제 때문에 웹 사이트가 검색되지 않는 이슈가 발생하는데 이 문제를 해결하기 위해 검색엔진 최적화(SEO)를 위하여 Next.js 적용</li>
+						<li>
+							SPA의 특성이 CSR의 문제 때문에 웹 사이트가 검색되지 않는 이슈가
+							발생하는데 이 문제를 해결하기 위해 검색엔진 최적화(SEO)를 위하여
+							Next.js 적용
+						</li>
 						<li>
 							마이데이터 제휴 페이지 : Form요소를
 							<a
@@ -52,7 +57,8 @@ const WebFinnqV3 = () => {
 								rel='noopener noreferrer'
 							>
 								react-hook-form
-							</a>을 이용하여 Axios로 API 개발 적용
+							</a>
+							을 이용하여 Axios로 API 개발 적용
 						</li>
 						<li>
 							<a
@@ -69,7 +75,10 @@ const WebFinnqV3 = () => {
 				<li>
 					<strong>성과</strong>:
 					<ul className={pageStyle.subList}>
-						<li>Next.js로 구현하여 React로 웹 사이트를 구현하였지만 웹 검색이 가능하도록 구현</li>
+						<li>
+							Next.js로 구현하여 React로 웹 사이트를 구현하였지만 웹 검색이
+							가능하도록 구현
+						</li>
 						<li>
 							정적인 메인 화면을
 							<a
@@ -84,7 +93,7 @@ const WebFinnqV3 = () => {
 						<li>SCSS를 적용 &rarr; CSS 클래스 모듈적용</li>
 						<li>웹표준 및 시멘틱 마크업 적용</li>
 						<li>Web, Mobile 디바이스에 맞게 반응형으로 제작</li>
-						<li>IE10까지 크로스 브라우징 대응</li>						
+						<li>IE10까지 크로스 브라우징 대응</li>
 					</ul>
 				</li>
 				<li>
@@ -102,8 +111,8 @@ const WebFinnqV3 = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
-
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

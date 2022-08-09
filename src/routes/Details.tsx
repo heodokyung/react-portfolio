@@ -39,6 +39,7 @@ import WebToyCoinList from '../pages/detail/web/WebToyCoinList';
 import WebToyMovieList from '../pages/detail/web/WebToyMovieList';
 import WebFinnqTransmission from '../pages/detail/web/WebFinnqTransmission';
 import WebToyTodoList from '../pages/detail/web/WebToyTodoList';
+import WebToyNetflix from './../pages/detail/web/WebToyNetflix';
 
 const DetailsViewWrap = styled.article`
 	width: 1160px;
@@ -132,6 +133,7 @@ function Details() {
 					{viewId === 'w_toy_todo_list' && <WebToyTodoList />}
 					{viewId === 'w_toy_coin_list' && <WebToyCoinList />}
 					{viewId === 'w_toy_movie_list' && <WebToyMovieList />}
+					{viewId === 'w_toy_netflix' && <WebToyNetflix />}
 				</DetailsView>
 			</DetailsViewWrap>
 		</>

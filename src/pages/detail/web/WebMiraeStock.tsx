@@ -1,24 +1,25 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebMiraeStock = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_mirae0.jpg')}`,
-			alt: '미래에셋대우 홈페이지 스크린샷1',
+			alt: '미래에셋대우 통합 웹: 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_mirae1.jpg')}`,
-			alt: '미래에셋대우 홈페이지 스크린샷2',
+			alt: '미래에셋대우 통합 웹: 금융상품 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_mirae2.jpg')}`,
-			alt: '미래에셋대우 홈페이지 스크린샷3',
+			alt: '미래에셋대우 통합 웹: 연금자산 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_mirae3.jpg')}`,
-			alt: '미래에셋대우 홈페이지 스크린샷4',
+			alt: '미래에셋대우 통합 웹: 이용안내/문의',
 		},
 	];
 
@@ -153,8 +154,8 @@ const WebMiraeStock = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
-
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

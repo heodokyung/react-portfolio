@@ -1,20 +1,22 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebToyMovieList = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_movie1.png')}`,
-			alt: '영화 정보목록 스크린샷1',
+			alt: '영화 정보 화면: WEB',
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_movie2.png')}`,
-			alt: '영화 정보목록 스크린샷2',
+			alt: '영화 정보 화면: MOBILE',
+			option: true,
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_movie3.png')}`,
-			alt: '영화 정보목록 스크린샷3',
+			alt: '영화 정보 상세: WEB, MOBILE 공통',
 		},
 	];
 
@@ -64,7 +66,8 @@ const WebToyMovieList = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

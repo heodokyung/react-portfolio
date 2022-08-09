@@ -1,16 +1,18 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebFinnqV2 = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_finnq_w_1.jpg')}`,
-			alt: 'Finnq Web Summary1',
+			alt: 'Finnq Web: WEB 메인 화면',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_finnq_w_2.jpg')}`,
-			alt: 'Finnq Web Summary2',
+			alt: 'Finnq Web: MOBILE 메인 화면(반응형 웹)',
+			option: true,
 		},
 	];
 
@@ -113,7 +115,7 @@ const WebFinnqV2 = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>

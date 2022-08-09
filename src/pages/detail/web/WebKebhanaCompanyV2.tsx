@@ -1,28 +1,29 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
 import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from '../../../components/views/ImgListView';
 
 const WebKebhanaCompanyV2 = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_combine_1.jpg')}`,
-			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편 이미지1',
+			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편(운영 업무): 메인',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_combine_2.jpg')}`,
-			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편 이미지2',
+			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편(운영 업무): GNB 메뉴',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_combine_3.jpg')}`,
-			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편 이미지3',
+			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편(운영 업무): 고객센터',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_combine_4.jpg')}`,
-			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편 이미지4',
+			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편(운영 업무): 전체메뉴',
 		},
 		{
 			src: `${require('../../../images/detailView/web/ui/img_kebhana_combine_5.jpg')}`,
-			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편 이미지5',
+			alt: '하나은행 기업뱅킹 웹 사이트 통합 개편(운영 업무): 로그인',
 		},
 	];
 
@@ -103,7 +104,7 @@ const WebKebhanaCompanyV2 = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>
 	);

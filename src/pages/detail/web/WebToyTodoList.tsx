@@ -1,20 +1,20 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
+import ImgListView from './../../../components/views/ImgListView';
 
 const WebToyTodoList = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_todos1.gif')}`,
-			alt: 'Todo List App 요약 이미지1',
+			alt: 'Todo List App: 할일 입력 화면',
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_todos2.gif')}`,
-			alt: 'Todo List App 요약 이미지2',
+			alt: 'Todo List App: 할일 입력 후 진행중, 완료 상태 변경',
 		},
 		{
 			src: `${require('../../../images/detailView/web/toy/img_toy_todos3.gif')}`,
-			alt: 'Todo List App 요약 이미지3',
+			alt: 'Todo List App: 반응형 웹 구현 적용 화면',
 		},
 	];
 
@@ -61,7 +61,7 @@ const WebToyTodoList = () => {
 				</li>
 				<li>
 					<strong>적용기술</strong>: ReactJS, TypeScript, styled-components,
-					recoil, react-hook-form, recoil-persist
+					recoil, react-hook-form,
 				</li>
 				<li>
 					<a
@@ -75,7 +75,8 @@ const WebToyTodoList = () => {
 				</li>
 			</ul>
 
-			<ReactSwiper imgData={imgData} />
+			{/* <ReactSwiper imgData={imgData} /> */}
+			<ImgListView imgData={imgData} />
 
 			<ListBtn />
 		</>
