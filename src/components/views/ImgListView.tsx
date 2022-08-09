@@ -31,7 +31,6 @@ interface IImgData {
 	src: string | undefined;
 	alt: string | undefined;
 	option?: boolean;
-	title?: string;
 }
 
 const ImgListView = ({ imgData }: { imgData: any }) => {
@@ -40,7 +39,7 @@ const ImgListView = ({ imgData }: { imgData: any }) => {
 			{imgData.map((item: IImgData, idx: number) => (
 				<ImgCont key={idx}>
 					<ImgTitle>
-						{idx + 1}.{item.title !== undefined ? item.title : item.alt}
+						{idx + 1}.{item.alt}
 					</ImgTitle>
 
 					<Img

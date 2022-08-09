@@ -6,20 +6,30 @@ const WebFinnqTransmission = () => {
 	const imgData = [
 		{
 			src: `${require('../../../images/detailView/web/front/img_mydata_finnq1.png')}`,
-			alt: 'Finnq 전송요구 통지서 요약1',
-			option: true,
-			title: '모바일, 웹 공통 진입 화면',
+			alt: 'Finnq 마이데이터: 전송요구 통지서 웹',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/img_mydata_finnq2.png')}`,
-			alt: 'Finnq 전송요구 통지서 요약2',
-			option: true,
-			title: '모바일 화면: 에러 반환',
+			alt: 'Finnq 마이데이터: 전송요구 통지서 웹(오류)',
 		},
 		{
 			src: `${require('../../../images/detailView/web/front/img_mydata_finnq3.png')}`,
-			alt: 'Finnq 전송요구 통지서 요약3',
-			title: '웹 화면: 전송요구 통지서 내용 노출',
+			alt: 'Finnq 마이데이터: 전송요구 통지서 웹(전송내역 통지서)',
+		},
+		{
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq1.png')}`,
+			alt: 'Finnq 마이데이터: 전송요구 통지서 모바일',
+			option: true,
+		},
+		{
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq2.png')}`,
+			alt: 'Finnq 마이데이터: 전송요구 통지서 모바일(오류)',
+			option: true,
+		},
+		{
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq3.png')}`,
+			alt: 'Finnq 마이데이터: 전송요구 통지서 모바일(전송내역 통지서)',
+			option: true,
 		},
 	];
 
