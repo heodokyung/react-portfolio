@@ -17,17 +17,17 @@ const WebFinnqTransmission = () => {
 			alt: 'Finnq 마이데이터: 전송요구 통지서 웹(전송내역 통지서)',
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/img_mydata_finnq1.png')}`,
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq4.png')}`,
 			alt: 'Finnq 마이데이터: 전송요구 통지서 모바일',
 			option: true,
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/img_mydata_finnq2.png')}`,
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq5.png')}`,
 			alt: 'Finnq 마이데이터: 전송요구 통지서 모바일(오류)',
 			option: true,
 		},
 		{
-			src: `${require('../../../images/detailView/web/front/img_mydata_finnq3.png')}`,
+			src: `${require('../../../images/detailView/web/front/img_mydata_finnq6.png')}`,
 			alt: 'Finnq 마이데이터: 전송요구 통지서 모바일(전송내역 통지서)',
 			option: true,
 		},
