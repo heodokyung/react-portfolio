@@ -164,7 +164,7 @@ const ProjectListElement = ({
 			data-view={projectEl.eventShow === true ? 'true' : 'false'}
 		>
 			<Link
-				to={`${process.env.PUBLIC_URL}/details/`}
+				to={`/details/`}
 				state={{
 					viewId: projectEl.id,
 					helmeTitle: projectEl.title,

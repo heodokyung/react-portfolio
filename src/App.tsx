@@ -14,7 +14,6 @@ import { useEffect } from 'react';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
-
   *,
   ::before,
   ::after {
@@ -61,46 +60,43 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Container = styled.div`
-  max-width: 1920px;
-  margin: 0 auto;
-  padding-top: 130px;
-  padding-bottom: 50px;
-  &.is-active {
-    padding-top: 63px;
-  }
+	max-width: 1920px;
+	margin: 0 auto;
+	padding-top: 130px;
+	padding-bottom: 50px;
+	&.is-active {
+		padding-top: 63px;
+	}
 `;
 
 function App() {
-  useEffect(() => {
-    console.log(
-      '%c입사지원한 허도경입니다. \n잘 부탁드립니다.',
-      'color:#222; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;'
-    );
-  }, []);
+	useEffect(() => {
+		console.log(
+			'%c안녕하세요!. 허도경입니다. \n즐겁게 일하겠습니다.',
+			'color:#222; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;',
+		);
+	}, []);
 
-  const isDarkMode = useRecoilValue(isDarkAtom);
-  const { scrollY } = useScroll();
-  return (
-    <>
-      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <GlobalStyle />
-        <BrowserRouter>
-          <PageScrollTop />
-          <Header />
-          <Container className={scrollY > 0 ? 'is-active' : ''}>
-            <Routes>
-              <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
-              <Route
-                path={process.env.PUBLIC_URL + '/details'}
-                element={<Details />}
-              />
-            </Routes>
-          </Container>
-          <Footer />
-        </BrowserRouter>
-      </ThemeProvider>
-    </>
-  );
+	const isDarkMode = useRecoilValue(isDarkAtom);
+	const { scrollY } = useScroll();
+	return (
+		<>
+			<ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+				<GlobalStyle />
+				<BrowserRouter basename={process.env.PUBLIC_URL}>
+					<PageScrollTop />
+					<Header />
+					<Container className={scrollY > 0 ? 'is-active' : ''}>
+						<Routes>
+							<Route path={'/'} element={<Home />} />
+							<Route path={'/details'} element={<Details />} />
+						</Routes>
+					</Container>
+					<Footer />
+				</BrowserRouter>
+			</ThemeProvider>
+		</>
+	);
 }
 
 export default App;
