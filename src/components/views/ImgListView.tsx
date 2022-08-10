@@ -21,7 +21,7 @@ const Img = styled.img`
 	width: 100%;
 	height: auto;
 	&.mobile {
-		width: 40vw;
+		width: 380px;
 		@media screen and (max-width: 500px) {
 			width: 100%;
 		}
