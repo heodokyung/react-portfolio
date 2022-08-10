@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.8648fd77.css",
-    "main.js": "/react-portfolio/static/js/main.992997b8.js",
+    "main.js": "/react-portfolio/static/js/main.dc4919e2.js",
     "static/media/img_toy_todos3.gif": "/react-portfolio/static/media/img_toy_todos3.7b85c55a0f9499791b47.gif",
     "static/media/img_toy_netflix2.png": "/react-portfolio/static/media/img_toy_netflix2.cf731d3134dfc3b070e3.png",
     "static/media/img_toy_netflix1.png": "/react-portfolio/static/media/img_toy_netflix1.16a650eeb3f76693fc75.png",
     "static/media/img_toy_netflix3.png": "/react-portfolio/static/media/img_toy_netflix3.5d84908f27207806f44d.png",
     "static/media/finnq_w_react_2.jpg": "/react-portfolio/static/media/finnq_w_react_2.d2ca60e0b77defb7227f.jpg",
     "static/media/img_mydata_finnq3.png": "/react-portfolio/static/media/img_mydata_finnq3.59bf8eea0da0b9305ae7.png",
-    "static/media/img_mydata_finnq6.png": "/react-portfolio/static/media/img_mydata_finnq6.8a6931aaeaaeb01d8681.png",
     "static/media/img_kebhana_open_4.jpg": "/react-portfolio/static/media/img_kebhana_open_4.3a9c1cd57c2422f9ec2c.jpg",
     "static/media/img_w_han1.jpg": "/react-portfolio/static/media/img_w_han1.a09e2766ddbb2bc32dc7.jpg",
     "static/media/finnq_w_react_3.jpg": "/react-portfolio/static/media/finnq_w_react_3.3290f5e9e36d66a770ff.jpg",
@@ -20,6 +19,7 @@
     "static/media/img_toy_movie1.png": "/react-portfolio/static/media/img_toy_movie1.4bacb9efdb20823337af.png",
     "static/media/img_m_lottemembers3.png": "/react-portfolio/static/media/img_m_lottemembers3.bb618210f0df20b14b9a.png",
     "static/media/bg_main_visual.jpg": "/react-portfolio/static/media/bg_main_visual.aa9cfdea24967f8f95c7.jpg",
+    "static/media/img_mydata_finnq6.png": "/react-portfolio/static/media/img_mydata_finnq6.be6a5cbcd14129f314c8.png",
     "static/media/img_m_kloud5.jpg": "/react-portfolio/static/media/img_m_kloud5.5bc57251727df269e4ca.jpg",
     "static/media/img_mirae0.jpg": "/react-portfolio/static/media/img_mirae0.17b333e991335265570a.jpg",
     "static/media/img_mirae3.jpg": "/react-portfolio/static/media/img_mirae3.2bc47c9f4c22e007ddfc.jpg",
@@ -71,10 +71,9 @@
     "static/media/img_m_kloud2.jpg": "/react-portfolio/static/media/img_m_kloud2.21a576a82ad02e979668.jpg",
     "static/media/img_m_hansuone3.jpg": "/react-portfolio/static/media/img_m_hansuone3.cea322dfb4ec47f6009d.jpg",
     "static/media/img_w_lotte2.jpg": "/react-portfolio/static/media/img_w_lotte2.1920d3dfa2241d1df54f.jpg",
+    "static/media/img_mydata_finnq5.png": "/react-portfolio/static/media/img_mydata_finnq5.195b8a89f1245af574ef.png",
     "static/media/img_w_lotte3.jpg": "/react-portfolio/static/media/img_w_lotte3.8cc25bc24a838139e496.jpg",
     "static/media/img_kebhana_open_3.jpg": "/react-portfolio/static/media/img_kebhana_open_3.68d2281df3ee40e50f71.jpg",
-    "static/media/img_mydata_finnq4.png": "/react-portfolio/static/media/img_mydata_finnq4.b80bcc8b28eb9476a433.png",
-    "static/media/img_mydata_finnq5.png": "/react-portfolio/static/media/img_mydata_finnq5.80a2bdc0e1eec9d11ee0.png",
     "static/media/img_m_natuur1.jpg": "/react-portfolio/static/media/img_m_natuur1.199a0f79dcf1eb4ea606.jpg",
     "static/media/img_kebhana_combine_4.jpg": "/react-portfolio/static/media/img_kebhana_combine_4.772eab86e941c76017c2.jpg",
     "static/media/img_w_benecol1.jpg": "/react-portfolio/static/media/img_w_benecol1.dfc4d7db478caee6e24f.jpg",
@@ -103,6 +102,7 @@
     "static/media/img_kebhana_combine_5.jpg": "/react-portfolio/static/media/img_kebhana_combine_5.491305ee96454832917a.jpg",
     "static/media/img_m_krispy3.jpg": "/react-portfolio/static/media/img_m_krispy3.2b9762fbd7e3135b564c.jpg",
     "static/media/img_kebhana_4.jpg": "/react-portfolio/static/media/img_kebhana_4.a116d0067a9c69801af6.jpg",
+    "static/media/img_mydata_finnq4.png": "/react-portfolio/static/media/img_mydata_finnq4.b38c7d65433781eeae0f.png",
     "static/media/img_m_angelcoffee3.jpg": "/react-portfolio/static/media/img_m_angelcoffee3.ffb2ada68c8941b40222.jpg",
     "static/media/img_m_lottemembers1.png": "/react-portfolio/static/media/img_m_lottemembers1.bf9e9a126fb0f17b450a.png",
     "static/media/img_kebhana_company_1.jpg": "/react-portfolio/static/media/img_kebhana_company_1.27233cb8263241c70c56.jpg",
@@ -130,10 +130,10 @@
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
     "index.html": "/react-portfolio/index.html",
     "main.8648fd77.css.map": "/react-portfolio/static/css/main.8648fd77.css.map",
-    "main.992997b8.js.map": "/react-portfolio/static/js/main.992997b8.js.map"
+    "main.dc4919e2.js.map": "/react-portfolio/static/js/main.dc4919e2.js.map"
   },
   "entrypoints": [
     "static/css/main.8648fd77.css",
-    "static/js/main.992997b8.js"
+    "static/js/main.dc4919e2.js"
   ]
 }
