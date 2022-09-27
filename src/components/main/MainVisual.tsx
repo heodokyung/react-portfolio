@@ -8,6 +8,8 @@ const mainMouseAni = keyframes`
 
 const VisualWrap = styled.article`
 	position: relative;
+	width:1872px;
+	margin:0 auto;
 	height: 750px;
 	background: url(${require('../../images/main/bg_main_visual.jpg')}) no-repeat
 		50% 50%;
