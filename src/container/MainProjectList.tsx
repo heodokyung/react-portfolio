@@ -159,7 +159,7 @@ const MainProjectList = () => {
 				}
 			}
 		},
-		[SortCategoryType],
+		[projectList],
 	);
 
 	return (
