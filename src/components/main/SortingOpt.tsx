@@ -32,7 +32,7 @@ type SortProps = {
 		event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
 		_type: string,
 	) => void;
-	SortCategoryType: any;
+	SortCategoryType: any
 };
 
 const SortingOpt = ({ sortingList, SortCategoryType }: SortProps) => {
