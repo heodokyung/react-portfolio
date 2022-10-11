@@ -17,6 +17,7 @@ const VisualWrap = styled.article`
 	background-size: cover;
 	@media screen and (max-width: 960px) {
 		height: 420px;
+		width: 100%;
 	}
 `;
 
