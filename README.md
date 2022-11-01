@@ -35,3 +35,7 @@ node-sass, react-countup, react-lottie-player, react-query, react-responsive, re
 
 아직 부족한 부분이 많지만 개선 사항을 발견할 때마다 수정을 진행하면서 최적화를 하고 있습니다.
 잘 부탁드립니다. 감사합니다.
+
+
+## 사이트 바로가기
+<a href="https://heodokyung.github.io/react-portfolio/" target="_blank">React 포트폴리오</a>
