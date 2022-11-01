@@ -38,7 +38,7 @@ const WebFinnqV3 = () => {
 			{/* 상세설명 */}
 			<ul className={pageStyle.description}>
 				<li>
-					<strong>기간</strong>: 2021.04.10 ~ 재직중
+					<strong>기간</strong>: 2021.04.10 ~ 2022.09.16
 				</li>
 				<li>
 					<strong>역할</strong>:
