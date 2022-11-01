@@ -42,7 +42,7 @@ const MobileFinnqAppV2 = () => {
       {/* 상세설명 */}
       <ul className={pageStyle.description}>
         <li>
-          <strong>기간</strong> : 2018.08.01 ~ 재직중
+          <strong>기간</strong> : 2018.08.01 ~ 2022.09.16
         </li>
         <li>
           <strong>역할</strong> :
