@@ -29,7 +29,7 @@ const WebRamada = () => {
 					<strong>역할</strong>: Ramada Casino 사이트 운영 및 전산업무
 				</li>
 				<li>
-					<strong>작업환경</strong>: PHP, Jquery, Javasrcipt
+					<strong>작업환경</strong>: ASP, Jquery, Javasrcipt
 				</li>
 				<li>
 					<strong>고객사</strong>: Ramada Casino

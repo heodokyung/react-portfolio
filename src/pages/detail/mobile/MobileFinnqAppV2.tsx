@@ -89,12 +89,12 @@ const MobileFinnqAppV2 = () => {
               >
                 ChangeFlow
               </a>
-              , Git을 통한 형상 배포
+              , GitLab을 통한 형상 배포
             </li>
           </ul>
         </li>
         <li>
-          <strong>운영 서비스 2.0</strong>
+          <strong>핀크 서비스 Ver 2.0</strong>
           <ul className={pageStyle.subList}>
             <li>
               핀크계좌 : 무료송금과 하나은행 ATM출금, 캐시백 혜택까지 받는
@@ -170,10 +170,10 @@ const MobileFinnqAppV2 = () => {
           </ul>
         </li>
         <li>
-          <strong>운영 서비스 3.0</strong>
+          <strong>핀크 서비스 Ver 3.0 개편</strong>
           <ul className={pageStyle.subList}>
             <li>
-              대출 : T통신스코어를 활용하여 자신에게 최적화 된 금리비교,
+              대출비교 플랫폼 : T통신스코어를 활용하여 자신에게 최적화 된 금리비교,
               추천상품을 제공
             </li>
             <li>
@@ -184,17 +184,17 @@ const MobileFinnqAppV2 = () => {
               >
                 마이데이터 서비스
               </a>
-              를 기반으로 한 금융 맞춤 서비스 개시
+              를 기반으로 한 금융 맞춤 서비스 개시(보험, 자산, 소비내역 분석 등)
             </li>
             <li>
-              예적금, 카드, 대출, 보험, 기프티콘몰등 일상속에서 자신에게 꼭
-              필요한 금융서비스를 제공
+              예적금, 카드, 대출, 보험, 기프티콘 몰등 일상 생활속에서 자신에게 꼭
+              필요한 금융서비스를 제공하는 서비스 제공(플랫폼 및 상품 가입 프로세스 구축)
             </li>
             <li>
-              리얼리 : SNS기반 금융 커뮤니케이션으로 익명(별명)으로 매달
-              주어지는 챌리저를 도전하고 타인의 금융을 알아보는 서비스
+              리얼리 : 마이데이터 서비스를 기반으로 한 금융 SNS 커뮤니케이션으로 익명(별명)으로 매달
+              주어지는 챌리저를 도전하고 타인의 금융을 알아보는 서비스 신규 구축
             </li>
-            <li>금융 서비스 전면 개편</li>
+            <li>금융 서비스(카드몰, 예적금 몰 등) 전면 개편 작업 진행</li>
           </ul>
         </li>
         <li>
@@ -210,93 +210,14 @@ const MobileFinnqAppV2 = () => {
               핀크 앱을 3.0(송금, 대출 등)서비스로 개편하면서 공통 UI 변경으로
               사용자 편의성 향상
             </li>
-            <li>UI 개편으로 사용성 개선, 신규회원 유입 증가</li>
-            <li>하나의 CSS로 관리되된 소스를 SCSS를 적용하여 프로젝트 단위로 관리될 수 있도록 리소스 최소화</li>
-            <li>CSS관리 방법론 중 하나인 BEM 방법론 도입하여 CSS관리 요소를 최적화 진행</li>
+            <li>공통요소들을 컴포넌트 단위로 제작하여 리소스 이슈를 최소화</li>
+            <li>하나의 CSS로 관리되된 소스를 SCSS를 적용하여 프로젝트 단위로 관리될 수 있도록 적용</li>
+            <li>CSS관리 방법론 중 하나인 BEM 방법론을 도입하여 CSS관리 요소를 최적화 진행</li>
             <li>오픈뱅킹 API 연동으로 은행/증권사 연결 다양화</li>
           </ul>
         </li>
         <li>
-          <strong>작업환경</strong> :
-          <a
-            href="https://www.w3schools.com/html/default.asp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            HTML5
-          </a>
-          ,
-          <a
-            href="https://www.w3schools.com/css/default.asp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CSS3
-          </a>
-          ,
-          <a
-            href="https://Jquery.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jquery
-          </a>
-          ,
-          <a
-            href="http://vanilla-js.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vanilla JS
-          </a>
-          ,
-          <a
-            href="https://sass-lang.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Sass
-          </a>
-          ,
-          <a
-            href="https://zeplin.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Zeplin
-          </a>
-          ,
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Git/SVN
-          </a>
-          ,
-          <a
-            href="https://ko.atlassian.com/software/jira"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jira
-          </a>
-          ,
-          <a
-            href="https://ko.atlassian.com/software/confluence"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Wiki Confluence
-          </a>
-          ,
-          <a
-            href="https://slack.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Slack
-          </a>
+          <strong>작업환경</strong>: HTML5, CSS3, Jquery, Vanilla JS, Vue, Scss, Zeplin, Git, GitLab, SVN, Jira, Wiki Confluence, Slack
         </li>
       </ul>
 

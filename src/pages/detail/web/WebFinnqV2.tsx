@@ -1,6 +1,5 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
 import ImgListView from '../../../components/views/ImgListView';
 
 const WebFinnqV2 = () => {
@@ -55,54 +54,8 @@ const WebFinnqV2 = () => {
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>:
-					<a
-						href='https://www.w3schools.com/html/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						HTML5
-					</a>
-					,
-					<a
-						href='https://www.w3schools.com/css/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						CSS3
-					</a>
-					,
-					<a
-						href='https://Jquery.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Jquery
-					</a>
-					,
-					<a
-						href='https://zeplin.io/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Zeplin
-					</a>
-					,
-					<a
-						href='https://ko.atlassian.com/software/jira'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Jira
-					</a>
-					,
-					<a
-						href='https://slack.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Slack
-					</a>
+					<strong>작업환경</strong>: SHTML5, CSS3, Jquery, Vanilla JS, Zeplin,
+					Git, GitLab, SVN, Slack, Jira
 				</li>
 				<li>
 					<a

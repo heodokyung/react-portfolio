@@ -1,6 +1,5 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
 import ImgListView from './../../../components/views/ImgListView';
 
 const WebFinnqV3 = () => {
@@ -60,16 +59,6 @@ const WebFinnqV3 = () => {
 							</a>
 							을 이용하여 Axios로 API 개발 적용
 						</li>
-						<li>
-							<a
-								href='https://terms.naver.com/entry.nhn?docId=2067169&amp;cid=50305&amp;categoryId=50305'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								트러블 슈팅(trouble shooting)
-							</a>
-							및 단위테스트
-						</li>
 					</ul>
 				</li>
 				<li>
@@ -99,7 +88,7 @@ const WebFinnqV3 = () => {
 				</li>
 				<li>
 					<strong>작업환경</strong>: React, SCSS, styled-components, Vanilla JS,
-					Git/SVN, Slack, Next.js
+					Git, GitLab, SVN, Slack, Jira, Next.js
 				</li>
 				<li>
 					<a
