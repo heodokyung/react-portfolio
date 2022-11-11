@@ -47,29 +47,32 @@ const MobileFinnqAppV2 = () => {
         <li>
           <strong>역할</strong> :
           <ul className={pageStyle.subList}>
-            <li>Finnq App 서비스 운영</li>
-            <li>신규 추가 서비스 퍼블리싱 및 이벤트 페이지 GUI구현</li>
+            <li>Finnq App 서비스 운영 및 UI 서비스 개선</li>
+            <li>마이데이터 서비스를 기반으로 한 금융 SNS 플랫폼 '리얼리' 구축</li>
+            <li>대출비교 플랫폼 구축</li>
+            <li>핀크 대출상품(하나금융 생활비 대출, DGB비상금 대출, 저축은행 똑똑대출) 구축</li>
+            <li>신용점수 올리기 구축</li>
+            <li>예적금몰 플랫폼 구축</li>
+            <li>KDB산업은행 'SKT X T High5 적금' 상품 가입 프로세스 구축</li>
+            <li>카드몰 비교 플랫폼 구축</li>
+            <li>기프티콘 구매 플랫폼 구축</li>
+            <li>신규 서비스 퍼블리싱 및 UI 개발 작업 진행</li>
+            <li>이벤트 페이지 GUI구현</li>
             <li>Ajax 데이터 연동 이벤트 구현</li>
+            <li>핀크 마크업 컨벤션 가이드 제작</li>
+            <li>마이데이터 서비스 사업 확정 후 서비스 전면 개편</li>
+            <li>오픈뱅킹API 적용으로 은행 연결 프로세스 구축</li>
             <li>
-              차트 구현
+              기존에 사용하던 유료차트(RMATE 차트)를 OPEN API인
               <a
                 href="https://www.chartjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Chartjs Api 사용
+                Chartjs Api를 적용하여 전면적으로 개편
               </a>
             </li>
-            <li>
-              <a
-                href="https://terms.naver.com/entry.nhn?docId=2067169&amp;cid=50305&amp;categoryId=50305"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                트러블 슈팅(trouble shooting)
-              </a>
-              및 단위테스트
-            </li>
+            <li>공통요소 밀 팝업요소를 컴포넌트 단위로 제작하여 관리이슈 최소화</li>
             <li>
               <a
                 href="https://www.jenkins.io/"
@@ -191,8 +194,6 @@ const MobileFinnqAppV2 = () => {
               리얼리 : SNS기반 금융 커뮤니케이션으로 익명(별명)으로 매달
               주어지는 챌리저를 도전하고 타인의 금융을 알아보는 서비스
             </li>
-            <li>기타 이벤트 페이지 구현</li>
-            <li>송금 서비스 전면 개편</li>
             <li>금융 서비스 전면 개편</li>
           </ul>
         </li>
@@ -209,12 +210,10 @@ const MobileFinnqAppV2 = () => {
               핀크 앱을 3.0(송금, 대출 등)서비스로 개편하면서 공통 UI 변경으로
               사용자 편의성 향상
             </li>
-            <li>오픈뱅킹API 도입으로 은행/증권사 연결 다양화</li>
             <li>UI 개편으로 사용성 개선, 신규회원 유입 증가</li>
-            <li>신규 서비스 추가 런칭</li>
-            <li>SNS기반 금융서비스 리얼리런칭</li>
-            <li>마이데이터 서비스 개편</li>
-            <li>기존에 사용하던 유료차트(Rmate Chart)를 Open Api인 Chart.js로 전환하여 전면 개편</li>
+            <li>하나의 CSS로 관리되된 소스를 SCSS를 적용하여 프로젝트 단위로 관리될 수 있도록 리소스 최소화</li>
+            <li>CSS관리 방법론 중 하나인 BEM 방법론 도입하여 CSS관리 요소를 최적화 진행</li>
+            <li>오픈뱅킹 API 연동으로 은행/증권사 연결 다양화</li>
           </ul>
         </li>
         <li>
