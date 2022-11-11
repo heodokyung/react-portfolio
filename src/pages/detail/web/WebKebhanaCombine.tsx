@@ -57,39 +57,7 @@ const WebKebhanaCombine = () => {
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>:
-					<a
-						href='https://www.w3schools.com/html/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						XHTML 1.0 Transitional
-					</a>
-					,
-					<a
-						href='https://www.w3schools.com/css/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						CSS3
-					</a>
-					,
-					<a
-						href='https://Jquery.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Jquery
-					</a>
-					,
-					<a
-						href='https://www.w3schools.com/js/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Javascript
-					</a>
-					,
+					<strong>작업환경</strong>: XHTML 1.0 Transitional,CSS3, Jquery, Javascript,
 					<a
 						href='http://www.i-on.net/product/ics/index.html'
 						target='_blank'

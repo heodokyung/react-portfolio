@@ -1,6 +1,5 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
 import ImgListView from '../../../components/views/ImgListView';
 
 const WebMiraeStock = () => {
@@ -84,46 +83,7 @@ const WebMiraeStock = () => {
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>:
-					<a
-						href='https://www.w3schools.com/html/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						XHTML 1.0 Transitional
-					</a>
-					,
-					<a
-						href='https://www.w3schools.com/css/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						CSS3
-					</a>
-					,
-					<a
-						href='https://Jquery.com/'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Jquery
-					</a>
-					,
-					<a
-						href='https://www.w3schools.com/js/default.asp'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Javascript
-					</a>
-					,
-					<a
-						href='https://www.photoshop.com/products'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Adobe Photoshop
-					</a>
+					<strong>작업환경</strong>: HTML5, CSS3, Jquery, Adobe Photoshop
 				</li>
 				<li>
 					<a

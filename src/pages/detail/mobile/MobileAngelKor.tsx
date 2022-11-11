@@ -62,38 +62,7 @@ const MobileAngelKor = () => {
           </ul>
         </li>
         <li>
-          <strong>작업환경</strong>:
-          <a
-            href="https://www.w3schools.com/html/default.asp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            HTML5
-          </a>
-          ,
-          <a
-            href="https://www.w3schools.com/css/default.asp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CSS3
-          </a>
-          ,
-          <a
-            href="https://Jquery.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jquery
-          </a>
-          ,
-          <a
-            href="https://www.photoshop.com/products"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Adobe Photoshop
-          </a>
+          <strong>작업환경</strong>: HTML5, CSS3, Jquery ,Adobe Photoshop
         </li>
         <li>
           <strong>고객사</strong>: 롯데리아 그룹

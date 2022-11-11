@@ -1,6 +1,5 @@
 import pageStyle from '../../../style/detailView.module.scss';
 import ListBtn from '../../../components/views/ListBtn';
-import ReactSwiper from '../../../components/views/ReactSwiper';
 import ImgListView from './../../../components/views/ImgListView';
 
 const WebToyMovieList = () => {

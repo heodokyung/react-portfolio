@@ -342,6 +342,15 @@ const Header = () => {
 							</li>
 							<li>
 								<a
+									href='https://github.com/heodokyung/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Github
+								</a>
+							</li>
+							<li>
+								<a
 									href='https://github.com/heodokyung/markup-guide/blob/master/README.md'
 									target='_blank'
 									rel='noopener noreferrer'
