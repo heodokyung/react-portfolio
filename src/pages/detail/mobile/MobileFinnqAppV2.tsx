@@ -214,7 +214,7 @@ const MobileFinnqAppV2 = () => {
             <li>신규 서비스 추가 런칭</li>
             <li>SNS기반 금융서비스 리얼리런칭</li>
             <li>마이데이터 서비스 개편</li>
-            <li>기종에 사용하던 유료차트(Rmate Chart)를 Open Api인 Chart.js로 전환하여 전면 개편</li>
+            <li>기존에 사용하던 유료차트(Rmate Chart)를 Open Api인 Chart.js로 전환하여 전면 개편</li>
           </ul>
         </li>
         <li>
