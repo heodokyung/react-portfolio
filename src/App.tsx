@@ -60,8 +60,6 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Container = styled.div`
-	max-width: 1920px;
-	margin: 0 auto;
 	padding-top: 130px;
 	padding-bottom: 50px;
 	&.is-active {

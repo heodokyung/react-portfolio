@@ -38,12 +38,12 @@ const WebFinnqV3 = () => {
 			{/* 상세설명 */}
 			<ul className={pageStyle.description}>
 				<li>
-					<strong>기간</strong>: 2021.04.10 ~ 재직중
+					<strong>기간</strong>: 2021.04.10 ~ 2022.09.16
 				</li>
 				<li>
 					<strong>역할</strong>:
 					<ul className={pageStyle.subList}>
-						<li>Finnq Web을 React + Next.js를 사용하여 개편</li>
+						<li>Finnq Web 사이트를 React와 Next.js를 사용 하여 전면 개편작업 진행</li>
 						<li>
 							SPA의 특성이 CSR의 문제 때문에 웹 사이트가 검색되지 않는 이슈가
 							발생하는데 이 문제를 해결하기 위해 검색엔진 최적화(SEO)를 위하여
@@ -80,7 +80,7 @@ const WebFinnqV3 = () => {
 							가능하도록 구현
 						</li>
 						<li>
-							정적인 메인 화면을
+							정적이던 메인 화면을
 							<a
 								href='https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API'
 								target='_blank'
@@ -91,8 +91,9 @@ const WebFinnqV3 = () => {
 							를 이용하여 CSS Animate를 적용
 						</li>
 						<li>SCSS를 적용 &rarr; CSS 클래스 모듈적용</li>
+						<li>styled-components 적용</li>
 						<li>웹표준 및 시멘틱 마크업 적용</li>
-						<li>Web, Mobile 디바이스에 맞게 반응형으로 제작</li>
+						<li>Web, Mobile 디바이스 사이즈에 맞춰 최적화가 될 수 있도록 반응형으로 제작</li>
 						<li>IE10까지 크로스 브라우징 대응</li>
 					</ul>
 				</li>

@@ -8,11 +8,9 @@ const mainMouseAni = keyframes`
 
 const VisualWrap = styled.article`
 	position: relative;
-	width:1872px;
 	margin:0 auto;
 	height: 750px;
-	background: url(${require('../../images/main/bg_main_visual.jpg')}) no-repeat
-		50% 50%;
+	background: url(${require('../../images/main/bg_main_visual.jpg')}) no-repeat 50% 50%;
 	background-attachment: fixed;
 	background-size: cover;
 	@media screen and (max-width: 960px) {
@@ -73,24 +71,34 @@ const VisualGuide = styled.div`
 	}
 `;
 
+const VisualWrapper = styled.div`
+	position: relative;
+	max-width:1920px;
+	left:50%;
+	transform: translate(-50%);
+`
+
+
 const MainVisual = () => {
 	return (
 		<VisualWrap>
 			<VisualTitleWrap>
-				<VisualTitle>Front-End</VisualTitle>
-				<TypingEffect>
-					<ReactTypingEffect
-						eraseSpeed={100}
-						speed={100}
-						eraseDelay={1000}
-						typingDelay={1000}
-						text={[
-							'안녕하세요!',
-							'항상 보다 좋은 결과물과 코드를 위해서 팀원들과 소통하고 협업합니다.',
-							'잘 부탁드립니다. 감사합니다 :)',
-						]}
-					/>
-				</TypingEffect>
+				<VisualWrapper>
+					<VisualTitle>UI DEVELOPER</VisualTitle>
+					<TypingEffect>
+						<ReactTypingEffect
+							eraseSpeed={100}
+							speed={100}
+							eraseDelay={1000}
+							typingDelay={1000}
+							text={[
+								'안녕하세요!',
+								'항상 보다 좋은 결과물과 코드를 위해서 팀원들과 소통하고 협업합니다.',
+								'잘 부탁드립니다. 감사합니다 :)',
+							]}
+						/>
+					</TypingEffect>
+				</VisualWrapper>
 			</VisualTitleWrap>
 			<VisualGuide>
 				<i hidden>Scroll</i>
