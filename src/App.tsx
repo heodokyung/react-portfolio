@@ -10,6 +10,8 @@ import Home from './routes/Home';
 import Details from './routes/Details';
 import Footer from './components/common/Footer';
 import PageScrollTop from './components/common/PageScrollTop';
+import 'react-app-polyfill/ie11';
+import "react-app-polyfill/stable";
 import { useEffect } from 'react';
 
 const GlobalStyle = createGlobalStyle`
@@ -73,10 +75,10 @@ function App() {
 			'%c안녕하세요!. 허도경입니다. \n즐겁게 일하겠습니다.',
 			'color:#222; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;',
 		);
-	}, []);
+  }, []);
 
 	const isDarkMode = useRecoilValue(isDarkAtom);
-	const { scrollY } = useScroll();
+  const { scrollY } = useScroll();
 	return (
 		<>
 			<ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>

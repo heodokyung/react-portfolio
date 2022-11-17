@@ -32,12 +32,14 @@ const WebMiraeStock = () => {
 				<li>
 					<strong>역할</strong>:
 					<ul className={pageStyle.subList}>
+						<li>퍼블리셔 PL</li>
 						<li>미래에셋대우 메인 퍼블리싱 및 GUI 구현</li>
 						<li>미래에셋대우 서브메인 퍼블리싱 및 GUI 구현 </li>
 						<li>미래에셋대우 공통 공통 마크업 가이드 배포</li>
 						<li>공통 UI 모션 구현</li>
 						<li>회사소개 웹 국문/영문 퍼블리싱</li>
 						<li>회사소개 모바일 국문/영문 퍼블리싱</li>
+						<li>웹 접근성에 관한 페이지 검수 및 수정 대응</li>
 					</ul>
 				</li>
 				<li>
@@ -50,7 +52,6 @@ const WebMiraeStock = () => {
 							미래에셋증권과 미래에셋 대우 사이트 통합으로 보다 나은 서비스 및
 							편리한 UI/UX 제공
 						</li>
-						<li>W3C Markup Validator, 웹 접근성 자동 평가도구(K-wah) 통과</li>
 						<li>
 							<a
 								href='http://wa.or.kr/waMark/status_new.asp'
@@ -60,6 +61,7 @@ const WebMiraeStock = () => {
 								미래에셋 대우 웹 접근성 마크 획득
 							</a>
 						</li>
+						<li>W3C Markup Validator, 웹 접근성 자동 평가도구(K-wah) 통과</li>
 						<li>
 							<a
 								href='http://wa.or.kr/waMark/status_new.asp'

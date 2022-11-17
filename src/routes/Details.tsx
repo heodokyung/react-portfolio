@@ -31,7 +31,6 @@ import WebLottemembers from '../pages/detail/web/WebLottemembers';
 import WebDovol from '../pages/detail/web/WebDovol';
 import WebMofat from '../pages/detail/web/WebMofat';
 import WebRamada from '../pages/detail/web/WebRamada';
-import WebPortfolioV2 from '../pages/detail/web/WebPortfolioV2';
 import CommonTitle from '../components/common/CommonTitle';
 import Progress from '../components/views/Progress';
 import MobileFinnqAppV2 from '../pages/detail/mobile/MobileFinnqAppV2';
@@ -105,7 +104,6 @@ function Details() {
 					{viewId === 'm_lotte' && <MobileLottemembers />}
 
 					{/* WEB 프로젝트 : UI 개발 */}
-					{viewId === 'w_portfolio_v2' && <WebPortfolioV2 />}
 					{viewId === 'w_finnq_v2' && <WebFinnqV2 />}
 					{viewId === 'w_kebhana_open' && <WebKebhanaOpen />}
 					{viewId === 'w_kebhana_company2' && <WebKebhanaCompanyV2 />}
