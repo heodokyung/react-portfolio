@@ -52,8 +52,8 @@ const WebKebhanaCombine = () => {
 							제공
 						</li>
 						<li>W3C Markup Validator, 웹 접근성 자동 평가도구(K-wah) 통과</li>
-						<li>익스플로러(ie7~) 및 모던 브라우저 크로스브라우징</li>
-						<li>Semantic Markup 퍼블리싱</li>
+						<li>익스플로러(ie7~) 및 모던 브라우저 크로스브라우징 대응</li>
+						<li>웹표준 및 시멘틱 마크업 퍼블리싱</li>
 					</ul>
 				</li>
 				<li>

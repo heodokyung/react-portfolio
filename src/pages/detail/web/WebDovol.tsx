@@ -28,7 +28,7 @@ const WebDovol = () => {
 					<strong>역할</strong>: 봉사활동 조회 및 입력/수정 정보 시스템 구축
 				</li>
 				<li>
-					<strong>작업환경</strong>: JAVA, JSP, SQL, Jquery, javascript
+					<strong>작업환경</strong>: Java, JSP, SQL, Jquery, javascript
 				</li>
 				<li>
 					<strong>DBMS</strong>: ORACLE

@@ -36,6 +36,7 @@ const WebKebhana = () => {
 						<li>KEB 하나은행 골드클럽 퍼블리싱 및 GUI 구현 </li>
 						<li>KEB 하나은행 글로벌 네트워크 퍼블리싱 및 GUI 구현 </li>
 						<li>공통 UI 'Navigation Util' 모션 구현</li>
+						<li>웹 접근성에 관한 페이지 검수 및 수정 대응</li>
 					</ul>
 				</li>
 				<li>
@@ -50,8 +51,9 @@ const WebKebhana = () => {
 								웹 접근성 마크 획득
 							</a>
 						</li>
-						<li>익스플로러(ie7~) 및 모던 브라우저 크로스브라우징</li>
-						<li>Semantic Markup 퍼블리싱</li>
+						<li>익스플로러(ie7~) 및 모던 브라우저 크로스브라우징 대응</li>
+						<li>W3C Markup Validator, 웹 접근성 자동 평가도구(K-wah) 통과</li>
+						<li>웹표준 및 시멘틱 마크업 퍼블리싱</li>
 					</ul>
 				</li>
 				<li>
@@ -77,8 +79,6 @@ const WebKebhana = () => {
 					</a>
 				</li>
 			</ul>
-
-			{/* <ReactSwiper imgData={imgData} /> */}
 			<ImgListView imgData={imgData} />
 			<ListBtn />
 		</>

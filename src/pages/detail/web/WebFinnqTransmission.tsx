@@ -74,15 +74,15 @@ const WebFinnqTransmission = () => {
 							React로 구현 및 반응형으로 구현하여 웹, 모바일 모두 대응할 수
 							있도록 구현.
 						</li>
-						<li>IE10까지 크로스 브라우징 대응.</li>
-						<li>styled-components로 스타일링 구현</li>
-						<li>axios로 Api 데이터 통신</li>
+						<li>IE10까지 크로스 브라우징 대응</li>
+						<li>Styled-components로 스타일링 구현</li>
+						<li>Axios로 Api 데이터 통신</li>
 						<li>중요데이터(계좌 등)는 마스킹 처리</li>
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>: React, styled-components, Git/SVN, Slack,
-					axios, Next.js
+					<strong>작업환경</strong>: React, Styled-components, Git/SVN, GitLab, Slack,
+					Axios, Next.js
 				</li>
 				<li>
 					<a

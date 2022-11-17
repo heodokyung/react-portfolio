@@ -33,13 +33,12 @@ const WebKebhanaOpen = () => {
 					<strong>역할</strong>:
 					<ul className={pageStyle.subList}>
 						<li>퍼블리셔 PL</li>
-						<li>KEB 하나은행 기업뱅킹 메인 퍼블리싱 및 GUI 구현</li>
-						<li>KEB 하나은행 기업뱅킹 서브메인 퍼블리싱 및 GUI 구현</li>
+						<li>KEB 하나은행 기업뱅킹(B2B) 메인 퍼블리싱 및 GUI 구현</li>
+						<li>KEB 하나은행 기업뱅킹(B2B) 서브메인 퍼블리싱 및 GUI 구현</li>
 						<li>서브 컨텐츠 페이지 퍼블리싱 및 GUI 구현</li>
-						<li>KEB 하나은행 공통 마크업 가이드 배포</li>
-						<li>
-							공통 UI 모션 개발 (슬라이드, GNB, 모달팝업, I-on연동 검색 등)
-						</li>
+						<li>KEB 하나은행 공통 마크업 가이드 및 공통 컴포넌트 UI 작업 배포</li>
+						<li>공통 UI 모션 개발 (슬라이드, GNB, 모달팝업, I-on연동 검색 등)</li>
+						<li>웹 접근성에 관한 페이지 검수 및 수정 대응</li>
 					</ul>
 				</li>
 				<li>
@@ -54,10 +53,10 @@ const WebKebhanaOpen = () => {
 								웹 접근성 마크 획득
 							</a>
 						</li>
-						<li>오픈뱅킹 환경으로 브라우저의 제약없이 접속 가능</li>
+						<li>이전 IE에서만 접속되던 환경에서 오픈뱅킹 환경의 전환으로 브라우저의 제약없이 접속 가능</li>
 						<li>이전 사이트와 비교하여 UI/UX 사용성 개선</li>
-						<li>익스플로러(ie9~) 및 모던 브라우저 크로스브라우징</li>
-						<li>Semantic Markup 퍼블리싱</li>
+						<li>익스플로러(ie9~) 및 모던 브라우저 크로스브라우징 대응</li>
+						<li>웹표준 및 시멘틱 마크업 퍼블리싱</li>
 						<li>페럴렉스 메뉴 구조화</li>
 					</ul>
 				</li>
