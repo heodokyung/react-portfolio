@@ -57,3 +57,13 @@
   left: 0;
 }
 
+.description .subListDetail {
+  margin-top:15px;
+  margin-left:15px;
+}
+
+.description .subListDetail + .subListDetail {margin-top: 30px;}
+.description .subListDetail .detailTitle {
+  margin-bottom: 15px;
+}
+

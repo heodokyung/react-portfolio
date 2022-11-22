@@ -53,10 +53,8 @@ const WebToyCoinList = () => {
 						<li>Styled-components를 사용하여 스타일링 적용</li>
 						<li>UI 개선 및 사용자 편의를 위한 다크모드 테마 적용</li>
 						<li>recoil로 상태관리</li>
-						<li>
-							react-helmet을 이용해 상세 페이지 이동시 페이지 Title이 상세
-							페이지에 맞게 Title이 변경될 수 있도록 적용 (웹 접근성 준수)
-						</li>
+						<li>react-helmet을 이용해 상세 페이지 이동시 페이지 Title이 상세
+							페이지에 맞게 Title이 변경될 수 있도록 적용 (웹 접근성 준수)</li>
 						<li>
 							axios와 React-query로 데이터 호출 및 관리 &rarr; React-query를
 							적용하여 브라우저 캐싱이 적용됨

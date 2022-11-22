@@ -9,11 +9,11 @@ export const lightTheme = {
 
 export const darkTheme = {
   bgColor: '#282c35',
-  textColor: '#fff',
+  textColor: '#f8f8f8',
   accentColor: '#ffe246',
   listColor: '#212121',
   subListColor: '#323232',
-  linkColor: '#12d26c',
+  linkColor: '#338FF8',
 };
 
 export const theme = {
