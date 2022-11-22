@@ -44,7 +44,7 @@ const WebFinnqV2 = () => {
 					</ul>
 				</li>
 				<li>
-					<strong>작업환경</strong>: SHTML5, CSS3, Jquery, Vanilla JS, Zeplin,
+					<strong>작업환경</strong>: HTML5, CSS3, Jquery, Vanilla JS, Zeplin,
 					Git, GitLab, SVN, Slack, Jira
 				</li>
 				<li>

@@ -42,11 +42,7 @@ const WebFinnqV3 = () => {
 				<li>
 					<strong>역할</strong>:
 					<ul className={pageStyle.subList}>
-						<li>Finnq Web 사이트를 React와 Next.js를 사용 하여 전면 개편작업 진행</li>
-						<li>
-							SPA의 특성이 CSR의 문제 때문에 웹 사이트가 검색되지 않는 이슈가
-							발생하여 이 문제를 해결(검색엔진 최적화(SEO))하기 위해 Next.js를 적용
-						</li>
+						<li>Finnq Web 사이트를 React와 Next.js 적용하여 전면 개편 진행 (반응형 웹 사이트로 구축)</li>
 						<li>
 							마이데이터 제휴 페이지 : Form요소를
 							<a
@@ -64,7 +60,7 @@ const WebFinnqV3 = () => {
 					<strong>성과</strong>:
 					<ul className={pageStyle.subList}>
 						<li>
-							Next.js로 구현하여 React로 웹 사이트를 구현하였지만 웹 검색이
+							Next.js로 구현하여 React(SPA)로 웹 사이트를 구현하였지만 웹 검색이
 							가능하도록 구현함
 						</li>
 						<li>
@@ -79,7 +75,7 @@ const WebFinnqV3 = () => {
 							를 이용하여 CSS Animate를 적용
 						</li>
 						<li>기존 하나의 CSS로 관리되던 부분을 SCSS를 적용하여 관리 이슈를 최소화 함</li>
-						<li>신규 페이지 작업은 Styled-components 적용</li>
+						<li>신규 페이지 작업은 Styled-components(CSS-IN-JS) 스타일링 적용</li>
 						<li>웹표준 및 시멘틱 마크업 적용</li>
 						<li>Web, Mobile 디바이스 사이즈에 맞춰 최적화가 될 수 있도록 반응형으로 제작</li>
 						<li>폴리필(Polyfill)을 적용하여 IE10까지 크로스 브라우징 대응</li>
