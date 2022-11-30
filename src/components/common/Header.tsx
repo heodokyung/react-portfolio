@@ -78,6 +78,9 @@ const HeaderWrap = styled.div`
 		.menu__wrap li {
 			font-size: 18px;
 		}
+		.menu__wrap li:after {
+			height:14px;
+		}
 	}
 	header {
 		max-width: 1920px;
@@ -98,14 +101,17 @@ const WebMenu = styled.ul`
 		padding: 0 15px;
 		font-size: 24px;
 	}
-	li:first-of-type:after {
+	li:after {
 		display: inline-block;
 		position: absolute;
 		border-left: 1px solid ${(props) => props.theme.textColor};
 		height: 20px;
-		right: 0;
-		top: 8px;
+		left: 0;
+		top:4px;
 		content: '';
+	}
+	li:first-of-type:after {
+		display:none;
 	}
 `;
 
@@ -317,6 +323,15 @@ const Header = () => {
 									rel='noopener noreferrer'
 								>
 									Github
+								</a>
+							</li>
+							<li>
+								<a
+									href='https://github.com/heodokyung/study-list'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Study
 								</a>
 							</li>
 						</WebMenu>
