@@ -118,7 +118,7 @@ const WebMenu = styled.ul`
 const MobileMenu = styled.ul`
 	display: none;
 	position: absolute;
-	bottom: -107px;
+	bottom: -159px;
 	left: 0;
 	right: 0;
 	li {
