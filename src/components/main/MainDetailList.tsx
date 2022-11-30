@@ -52,6 +52,7 @@ const DetailListEl = styled.article`
       padding-left: 10px;
       font-size: 14px;
       line-height: 18px;
+      word-break: keep-all;
     }
     li + li {
       margin-top: 6px;
