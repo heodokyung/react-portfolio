@@ -1,6 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { IProJect } from '../../atoms';
+import { useRecoilValue } from 'recoil';
+import { isDarkAtom } from './../../atoms';
 const fadeInAni = keyframes`
   from {
     opacity: 0;
@@ -73,10 +75,23 @@ const ProjectListEl = styled.li`
 	position: relative;
 	overflow: hidden;
 	border-radius: 4px;
-	border:1px solid ${(props) => props.theme.textColor};
-	a {
+	border:1px solid ${(props) => props.theme.listColor};
+
+	background-repeat:no-repaet;
+	background-size:cover;
+	background-position:50% 50%;
+
+
+	&[data-theme='dark'] { background-image:url(${require('../../images/main/bg_box_dark.jpg')})}
+	&[data-theme='light'] {background-image:url(${require('../../images/main/bg_box_dark2.jpg')})}
+	&[data-view='true'] {
 		display: block;
+		animation: ${fadeInAni} 0.65s forwards ease-in-out;
 	}
+	&[data-view='false'] { display: none; }
+
+	a {display: block;}
+
 	&.is-active:hover img,
 	&.is-active:focus img {
 		transform: scale(1.1);
@@ -88,17 +103,7 @@ const ProjectListEl = styled.li`
 	&.is-active ${Mask} {
 		display: block;
 	}
-
 	&.none {
-		display: none;
-	}
-
-	&[data-view='true'] {
-		display: block;
-		animation: ${fadeInAni} 0.65s forwards ease-in-out;
-	}
-
-	&[data-view='false'] {
 		display: none;
 	}
 `;
@@ -126,6 +131,7 @@ const LabelIco = styled.span`
 		color: ${(props) => props.theme.accentColor};
 	}
 `;
+
 const ProjectImg = styled.img`
 	width: 100%;
 `;
@@ -143,6 +149,8 @@ const ProjectListElement = ({
 	listEventLeave,
 	index,
 }: ProjectProps) => {
+
+	const isDarkMode = useRecoilValue(isDarkAtom);
 	return (
 		<ProjectListEl
 			className={
@@ -150,6 +158,7 @@ const ProjectListElement = ({
 					? `${projectEl.gubun} is-active`
 					: `${projectEl.gubun}`
 			}
+			data-theme={isDarkMode ? 'dark' : 'light'}
 			onMouseEnter={() => {
 				listEventIn(index);
 			}}
@@ -164,7 +173,8 @@ const ProjectListElement = ({
 			}}
 			data-view={projectEl.eventShow === true ? 'true' : 'false'}
 		>
-			<Link
+			<article>
+				<Link
 				to={`/details/`}
 				state={{
 					viewId: projectEl.id,
@@ -185,7 +195,8 @@ const ProjectListElement = ({
 					</p>
 					<span className='more'>자세히보기</span>
 				</Mask>
-			</Link>
+				</Link>
+			</article>
 		</ProjectListEl>
 	);
 };

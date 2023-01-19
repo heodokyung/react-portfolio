@@ -72,8 +72,8 @@ const Container = styled.div`
 function App() {
 	useEffect(() => {
 		console.log(
-			'%c안녕하세요!. 허도경입니다. \g회사와 함께 성장하면서 즐겁게 일하겠습니다.',
-			'color:#222; font-size:32px; font-weight:bold; text-shadow: #000 1px 1px;',
+			'%c안녕하세요! 오늘 하루도 감사합니다.',
+			'color:#222; font-size:24px; font-weight:bold; text-shadow: #000 1px 1px;',
 		);
   }, []);
 

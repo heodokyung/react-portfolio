@@ -1,5 +1,7 @@
+import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
 import { ISkillList } from '../../atoms';
+import { isDarkAtom } from './../../atoms';
 
 const SkillListEl = styled.li`
 	display: inline-block;
@@ -11,7 +13,13 @@ const SkillListEl = styled.li`
 	border-radius: 4px;
 	transition: 0.6s;
 	transform-style: preserve-3d;
-	background-color: ${(props) => props.theme.subListColor};
+	// background-color: ${(props) => props.theme.subListColor};
+	background-repeat:no-repaet;
+	background-size:cover;
+	background-position:50% 50%;
+	&[data-theme='dark'] { background-image:url(${require('../../images/main/bg_box_dark2.jpg')})}
+	&[data-theme='light'] {background-image:url(${require('../../images/main/bg_box_light.jpg')})}
+
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 
 	.front,
@@ -116,10 +124,13 @@ const SkillListElement = ({
 	listDetailView,
 	index,
 }: SkillProps) => {
+
+	const isDarkMode = useRecoilValue(isDarkAtom);
 	return (
 		<SkillListEl
 			key={skillEl.id}
 			className={skillEl.eventDetail === true ? 'is-active' : ''}
+			data-theme={isDarkMode ? 'dark' : 'light'}
 			onMouseEnter={() => {
 				listEventIn(index);
 			}}
