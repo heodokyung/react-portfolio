@@ -73,6 +73,7 @@ const ProjectListEl = styled.li`
 	position: relative;
 	overflow: hidden;
 	border-radius: 4px;
+	border:1px solid ${(props) => props.theme.textColor};
 	a {
 		display: block;
 	}
