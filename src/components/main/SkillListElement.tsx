@@ -13,7 +13,6 @@ const SkillListEl = styled.li`
 	border-radius: 4px;
 	transition: 0.6s;
 	transform-style: preserve-3d;
-	// background-color: ${(props) => props.theme.subListColor};
 	background-repeat:no-repaet;
 	background-size:cover;
 	background-position:50% 50%;
@@ -35,12 +34,11 @@ const SkillListEl = styled.li`
 		z-index: 5;
 		transform: rotateY(0deg);
 		.title {
-			position: absolute;
-			top: 130px;
-			left: 0;
-			right: 0;
+			margin-top: 14px;
 			text-align: center;
 			width: 100%;
+			font-weight:bold;
+			font-size:18px;
 		}
 	}
 
@@ -50,7 +48,7 @@ const SkillListEl = styled.li`
 		background: ${(props) => props.theme.subListColor};
 		color: ${(props) => props.theme.textColor};
 		font-size: 14px;
-		line-height: 16px;
+		line-height: 18px;
 		word-break: keep-all;
 		a {
 			display: block;
@@ -68,7 +66,7 @@ const SkillListEl = styled.li`
 		display: inline-block;
 		width: 64px;
 		height: 64px;
-		margin-top: 40px;
+		margin-top: 70px;
 		img {
 			width: 100%;
 		}
