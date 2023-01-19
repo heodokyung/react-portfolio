@@ -6,7 +6,7 @@ import { isDarkAtom } from './../../atoms';
 const SkillListEl = styled.li`
 	display: inline-block;
 	position: relative;
-	height: 210px;
+	height: 260px;
 	text-align: center;
 	color: ${(props) => props.theme.textColor};
 	border: 1px solid ${(props) => props.theme.listColor};
