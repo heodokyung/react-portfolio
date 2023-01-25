@@ -4,7 +4,7 @@ export const lightTheme = {
   accentColor: '#12cbef',
   listColor: '#dcdde1',
   subListColor: '#f5f6fa',
-  linkColor: '#0a54ff',
+  linkColor: '#d00a00',
 };
 
 export const darkTheme = {
@@ -13,7 +13,7 @@ export const darkTheme = {
   accentColor: '#ffe246',
   listColor: '#212121',
   subListColor: '#323232',
-  linkColor: '#338FF8',
+  linkColor: '#2aa3ff',
 };
 
 export const theme = {
