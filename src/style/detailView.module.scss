@@ -38,6 +38,9 @@
   color: var(--linkColor);
   cursor: pointer;
   text-decoration: underline;
+  position: relative;
+  top: -1px;
+  margin: 0 2px;
 }
 .description li strong {font-weight:bold;}
 
