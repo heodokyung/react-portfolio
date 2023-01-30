@@ -14,6 +14,7 @@ import MobileKrispyKor from '../pages/detail/mobile/MobileKrispyKor';
 import MobileAdcapsule from '../pages/detail/mobile/MobileAdcapsule';
 import MobileKloudbeer from '../pages/detail/mobile/MobileKloudbeer';
 import MobileLottemembers from '../pages/detail/mobile/MobileLottemembers';
+import MobileTheMarket from '../pages/detail/mobile/MobileTheMarket';
 import WebFinnqV3 from '../pages/detail/web/WebFinnqV3';
 import WebFinnqV2 from '../pages/detail/web/WebFinnqV2';
 import WebKebhanaOpen from '../pages/detail/web/WebKebhanaOpen';
@@ -39,6 +40,7 @@ import WebToyMovieList from '../pages/detail/web/WebToyMovieList';
 import WebFinnqTransmission from '../pages/detail/web/WebFinnqTransmission';
 import WebToyTodoList from '../pages/detail/web/WebToyTodoList';
 import WebToyNetflix from './../pages/detail/web/WebToyNetflix';
+import WebTheMarket from './../pages/detail/web/WebTheMarket';
 
 const DetailsViewWrap = styled.article`
 	width: 1160px;
@@ -102,6 +104,7 @@ function Details() {
 					{viewId === 'm_adcap' && <MobileAdcapsule />}
 					{viewId === 'm_kloudbeer' && <MobileKloudbeer />}
 					{viewId === 'm_lotte' && <MobileLottemembers />}
+					{viewId === 'm_themarket' && <MobileTheMarket />}
 
 					{/* WEB 프로젝트 : UI 개발 */}
 					{viewId === 'w_finnq_v2' && <WebFinnqV2 />}
@@ -116,6 +119,7 @@ function Details() {
 					{viewId === 'w_samsung' && <WebSamsungStock />}
 					{viewId === 'w_namdong_k' && <WebNamdongKor />}
 					{viewId === 'w_namdong_e' && <WebNamdongEng />}
+					{viewId === 'w_themarket' && <WebTheMarket />}
 
 					{/* WEB 프로젝트 : Front-End 개발 */}
 					{viewId === 'w_finnq_v3' && <WebFinnqV3 />}
