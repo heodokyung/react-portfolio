@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 const Title = styled.h2`
 	position: relative;
+	display: inline-block;
 	padding-bottom: 12px;
-	font-size: 40px;
-	line-height: 44px;
+	font-size: 64px;
+	line-height: 78px;
 	font-weight: bold;
 	margin-bottom: 30px;
 	color: ${(props) => props.theme.textColor};
@@ -19,13 +20,13 @@ const Title = styled.h2`
 		position: absolute;
 		border-bottom: 2px solid ${(props) => props.theme.textColor};
 		width: 100%;
-		bottom: 0;
-		left: 0;
+		bottom: -4px;
+		left: 4px;
 		right: 0;
 		content: '';
 	}
 	&.main:after {
-		width: 35px;
+		width: 30%;
 		border-width: 4px;
 	}
 `;
