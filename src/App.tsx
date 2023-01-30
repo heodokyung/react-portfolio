@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    font-size:1px;
+  }
+
   button {
     border: 0;
     vertical-align: middle;
@@ -62,10 +66,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Container = styled.div`
-	padding-top: 130px;
-	padding-bottom: 50px;
+	padding-top: 130rem;
+	padding-bottom: 50rem;
 	&.is-active {
-		padding-top: 63px;
+		padding-top: 63rem;
 	}
 `;
 
