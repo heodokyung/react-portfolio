@@ -35,7 +35,7 @@ const MobileTheMarket = () => {
           <strong>기간</strong> : 2022.11.01 ~ 현재
         </li>
         <li>
-          <strong>역활/성과</strong>:
+          <strong>역할/성과</strong>:
           <ul className={pageStyle.subList}>
             <li>CJ더마켓 모바일 웹/앱 서비스 운영 및 UI 서비스 개선</li>
             <li>CJ더마켓 '추천테마관' 신규 개설 작업</li>
