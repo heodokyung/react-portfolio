@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.07fd9307.css",
-    "main.js": "/react-portfolio/static/js/main.de2ef2db.js",
+    "main.css": "/react-portfolio/static/css/main.30c8c25e.css",
+    "main.js": "/react-portfolio/static/js/main.2776a70e.js",
     "static/media/img_toy_todos3.gif": "/react-portfolio/static/media/img_toy_todos3.7b85c55a0f9499791b47.gif",
     "static/media/cj_w_themarket_2.jpg": "/react-portfolio/static/media/cj_w_themarket_2.30bb4b1a035f130dd197.jpg",
     "static/media/cj_w_themarket_4.jpg": "/react-portfolio/static/media/cj_w_themarket_4.06abbb67f5bd27b669f3.jpg",
@@ -141,11 +141,11 @@
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
     "static/media/cj_m_themarket_5.webp": "/react-portfolio/static/media/cj_m_themarket_5.c9aa9c3a913ae10c581c.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.07fd9307.css.map": "/react-portfolio/static/css/main.07fd9307.css.map",
-    "main.de2ef2db.js.map": "/react-portfolio/static/js/main.de2ef2db.js.map"
+    "main.30c8c25e.css.map": "/react-portfolio/static/css/main.30c8c25e.css.map",
+    "main.2776a70e.js.map": "/react-portfolio/static/js/main.2776a70e.js.map"
   },
   "entrypoints": [
-    "static/css/main.07fd9307.css",
-    "static/js/main.de2ef2db.js"
+    "static/css/main.30c8c25e.css",
+    "static/js/main.2776a70e.js"
   ]
 }
