@@ -31,7 +31,7 @@ function Home() {
 				{/* 회사 경력 List */}
 				<MainWorkList />
 				{/* 그 외 기타 List */}
-					<MainAboutList />
+				<MainAboutList />
 			</Content>
 		</>
 	);

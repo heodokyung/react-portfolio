@@ -9,7 +9,7 @@ const mainMouseAni = keyframes`
 const VisualWrap = styled.article`
 	position: relative;
 	margin:0 auto;
-	height: 750px;
+	height: 750rem;
 	background: url(${require('../../images/main/bg_main_visual.jpg')}) no-repeat 50% 50%;
 	background-attachment: fixed;
 	background-size: cover;
@@ -20,7 +20,7 @@ const VisualWrap = styled.article`
 `;
 
 const VisualTitleWrap = styled.div`
-	padding: 32px 24px;
+	padding: 32rem 24rem;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -30,38 +30,38 @@ const VisualTitleWrap = styled.div`
 `;
 
 const VisualTitle = styled.p`
-	font-size: 72px;
-	line-height: 84px;
+	font-size: 72rem;
+	line-height: 84rem;
 	font-weight: bold;
 	color: #fff;
 	@media screen and (max-width: 960px) {
-		font-size: 42px;
-		line-height: 50px;
+		font-size: 42rem;
+		line-height: 50rem;
 	}
 `;
 
 const TypingEffect = styled.article`
-	margin-top: 20px;
-	font-size: 18px;
-	line-height: 22px;
+	margin-top: 20rem;
+	font-size: 18rem;
+	line-height: 22rem;
 	color: #fff;
 `;
 
 const VisualGuide = styled.div`
 	position: absolute;
 	left: 50%;
-	margin-left: -18px;
-	bottom: 45px;
+	margin-left: -18rem;
+	bottom: 45rem;
 	z-index: 10;
-	width: 36px;
-	height: 54px;
-	border-radius: 20px;
-	border: 2px solid #fff;
+	width: 36rem;
+	height: 54rem;
+	border-radius: 20rem;
+	border: 2rem solid #fff;
 	&:after {
 		display: inline-block;
 		position: absolute;
-		width: 4px;
-		height: 4px;
+		width: 4rem;
+		height: 4rem;
 		background: #fff;
 		border-radius: 50%;
 		content: '';

@@ -5,19 +5,19 @@ import ImgListView from './../../../components/views/ImgListView';
 const WebTheMarket = () => {
     const imgData = [
         {
-            src: `${require('../../../images/detailView/web/front/cj_w_themarket_1.jpg')}`,
+            src: `${require('../../../images/detailView/web/ui/cj_w_themarket_1.jpg')}`,
             alt: 'CJ 더마켓 메인',
         },
         {
-            src: `${require('../../../images/detailView/web/front/cj_w_themarket_2.jpg')}`,
+            src: `${require('../../../images/detailView/web/ui/cj_w_themarket_2.jpg')}`,
             alt: 'CJ 더마켓 전문관',
         },
         {
-            src: `${require('../../../images/detailView/web/front/cj_w_themarket_3.jpg')}`,
+            src: `${require('../../../images/detailView/web/ui/cj_w_themarket_3.jpg')}`,
             alt: 'CJ 더마켓 검색',
         },
         {
-            src: `${require('../../../images/detailView/web/front/cj_w_themarket_4.jpg')}`,
+            src: `${require('../../../images/detailView/web/ui/cj_w_themarket_4.jpg')}`,
             alt: 'CJ 더마켓 리뷰',
         },
     ];

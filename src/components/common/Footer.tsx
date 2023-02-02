@@ -14,30 +14,30 @@ const fadeInAni = keyframes`
 `;
 
 const FooterWrap = styled.article`
-	padding: 50px 0;
+	padding: 50rem 0;
 	background-color: ${(props) => props.theme.listColor};
 	color: ${(props) => props.theme.textColor};
 	font-size: 16px;
 	footer {
 		max-width: 1920px;
 		margin: 0 auto;
-		padding: 0 24px;
+		padding: 0 24rem;
 		height: 100%;
 		address {
-			margin-top: 15px;
+			margin-top: 15rem;
 			a:first-of-type {
 				position: relative;
-				margin-right: 10px;
-				padding-right: 10px;
+				margin-right: 10rem;
+				padding-right: 10rem;
 			}
 			a:first-of-type:after {
 				position: absolute;
 				display: block;
 				right: 0;
 				top: 50%;
-				margin-top: -4px;
-				width: 1px;
-				height: 12px;
+				margin-top: -4rem;
+				width: 1rem;
+				height: 12rem;
 				content: '';
 				background-color: ${(props) => props.theme.textColor};
 			}
@@ -48,12 +48,12 @@ const FooterWrap = styled.article`
 const BtnScrollTop = styled.button`
 	position: fixed;
 	display: none;
-	width: 55px;
-	height: 63px;
+	width: 55rem;
+	height: 63rem;
 	background-size: cover;
-	right: 15px;
-	bottom: 50px;
-	border-radius: 8px;
+	right: 15rem;
+	bottom: 50rem;
+	border-radius: 8rem;
 	z-index: 10;
 	background: url(${require('../../images/common/btn_scroll.png')}) no-repeat
 		50% 50%;
