@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e67550ee.css",
-    "main.js": "/react-portfolio/static/js/main.fe3304d8.js",
+    "main.css": "/react-portfolio/static/css/main.07fd9307.css",
+    "main.js": "/react-portfolio/static/js/main.de2ef2db.js",
     "static/media/img_toy_todos3.gif": "/react-portfolio/static/media/img_toy_todos3.7b85c55a0f9499791b47.gif",
+    "static/media/cj_w_themarket_2.jpg": "/react-portfolio/static/media/cj_w_themarket_2.30bb4b1a035f130dd197.jpg",
+    "static/media/cj_w_themarket_4.jpg": "/react-portfolio/static/media/cj_w_themarket_4.06abbb67f5bd27b669f3.jpg",
+    "static/media/cj_w_themarket_3.jpg": "/react-portfolio/static/media/cj_w_themarket_3.80c97517b8ba3899774a.jpg",
+    "static/media/cj_w_themarket_1.jpg": "/react-portfolio/static/media/cj_w_themarket_1.d09950f6ed2c64b14363.jpg",
     "static/media/img_toy_netflix2.png": "/react-portfolio/static/media/img_toy_netflix2.cf731d3134dfc3b070e3.png",
     "static/media/img_toy_netflix1.png": "/react-portfolio/static/media/img_toy_netflix1.16a650eeb3f76693fc75.png",
     "static/media/img_toy_netflix3.png": "/react-portfolio/static/media/img_toy_netflix3.5d84908f27207806f44d.png",
@@ -129,14 +133,19 @@
     "static/media/img_toy_coin3.png": "/react-portfolio/static/media/img_toy_coin3.3f0ea9bdf36c543bea9e.png",
     "static/media/img_toy_coin1.png": "/react-portfolio/static/media/img_toy_coin1.e3e1be7698101a3e1694.png",
     "static/media/img_mofat.jpg": "/react-portfolio/static/media/img_mofat.d263ce1e528b251a01c7.jpg",
+    "static/media/cj_m_themarket_2.webp": "/react-portfolio/static/media/cj_m_themarket_2.0d6c591c6803c202b797.webp",
     "static/media/img_toy_coin2.png": "/react-portfolio/static/media/img_toy_coin2.7b10a057d15145bda541.png",
+    "static/media/cj_m_themarket_3.webp": "/react-portfolio/static/media/cj_m_themarket_3.54ec453a31ba9f8d307c.webp",
+    "static/media/cj_m_themarket_4.webp": "/react-portfolio/static/media/cj_m_themarket_4.6f6077589790204cd329.webp",
+    "static/media/cj_m_themarket_1.webp": "/react-portfolio/static/media/cj_m_themarket_1.f0465a70c86399310ad8.webp",
     "static/media/img_m_finnq_app1.webp": "/react-portfolio/static/media/img_m_finnq_app1.6c8ed0739c7dd3ea9638.webp",
+    "static/media/cj_m_themarket_5.webp": "/react-portfolio/static/media/cj_m_themarket_5.c9aa9c3a913ae10c581c.webp",
     "index.html": "/react-portfolio/index.html",
-    "main.e67550ee.css.map": "/react-portfolio/static/css/main.e67550ee.css.map",
-    "main.fe3304d8.js.map": "/react-portfolio/static/js/main.fe3304d8.js.map"
+    "main.07fd9307.css.map": "/react-portfolio/static/css/main.07fd9307.css.map",
+    "main.de2ef2db.js.map": "/react-portfolio/static/js/main.de2ef2db.js.map"
   },
   "entrypoints": [
-    "static/css/main.e67550ee.css",
-    "static/js/main.fe3304d8.js"
+    "static/css/main.07fd9307.css",
+    "static/js/main.de2ef2db.js"
   ]
 }
