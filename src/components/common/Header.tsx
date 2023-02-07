@@ -5,6 +5,7 @@ import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import { useScroll } from './useScroll';
 import { isDarkAtom } from '../../atoms';
 import { Mobile, PC } from './MediaQuery';
+import { Link } from 'react-router-dom';
 
 /****************************************
 * Header CSS-in-js 정의 부분
@@ -45,6 +46,15 @@ const HeaderLogo = styled.h1`
 		transform: scale3d(1, 1, 1);
 		transition: transform 0.5s;
 	}
+`;
+
+const ListBtnMove = styled(Link)`
+  display: block;
+  width: 100%;  
+  height: 100%;  
+  font-weight: inherit;
+  font-size:inherit;  
+  color:inherit;
 `;
 
 const HeaderWrap = styled.div`
@@ -113,6 +123,63 @@ const WebMenu = styled.ul`
 	li:first-of-type:after {
 		display:none;
 	}
+	
+	li > a:before, li > a:after {
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: ${(props) => props.theme.textColor};
+    transition: all 0.3s;
+  }
+  
+  li > a:before {
+    left: 0px;
+    top: 0px;
+  }
+
+  li > a:after {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  li > a:hover:before, li > a:hover:after
+  {
+      opacity: 1;
+      height: 2px;
+      width: 100%;
+  }
+
+  /* Border X get width  */
+  li > a:before, li > a:after
+  {
+      position: absolute;
+      opacity: 0;
+      width: 0%;
+      height: 2px;
+      content: '';
+      background: #FFF;
+      transition: all 0.3s;
+  }
+
+  li > a:before
+  {
+      left: 0px;
+      top: 0px;
+  }
+
+  li > a:after
+  {
+      right: 0px;
+      bottom: 0px;
+  }
+
+  li > a:hover:before, li > a:hover:after
+  {
+      opacity: 1;
+      width: 100%;
+  }
 `;
 
 const MobileMenu = styled.ul`
@@ -303,10 +370,10 @@ const Header = () => {
 	return (
 		<HeaderWrap className={scrollY > 0 ? 'fixed' : ''}>
 			<header>
-				<HeaderLogo>HEO.D.K</HeaderLogo>
+				<HeaderLogo><ListBtnMove to={'/'}>HEO.D.K</ListBtnMove></HeaderLogo>
 				<PC>
 					<nav>
-						<WebMenu className='menu__wrap'>
+						<MMenu className='menu__wrap'>
 							<li>
 								<a
 									href='https://whales.tistory.com/'
